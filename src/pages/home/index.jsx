@@ -3,9 +3,11 @@ import styles from './home.module.css';
 
 const Home = () => {
   return (
-    <div className={styles.container}>
-      <h2>Em construção...</h2>
-    </div>
+    <>
+    <section>
+      
+    </section>
+    </>
   );
 };
 

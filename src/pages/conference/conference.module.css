@@ -1,0 +1,127 @@
+.sectionContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.fade {
+  mask-image: linear-gradient(to bottom, #000 90%, transparent 100%);
+  background-image: url("/images/conference/background.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 80vh;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.logoGlitch {
+  width: min(90vw, 800px);
+  aspect-ratio: 800 / 550;
+  background: url("/images/conference/logo.png");
+  background-size: cover;
+  background-position: center;
+  animation: float 4s ease-in-out infinite, glitch 12s infinite steps(1);
+  z-index: 2;
+}
+
+.caroussel {
+  width: 100%;
+  overflow: hidden;
+  background: rgb(47 47 47);
+  /* border-top: 1px solid white;
+  border-bottom: 1px solid white; */
+
+  position: absolute;
+  top: 0;
+  z-index: 5;
+  display: flex;
+}
+.track {
+  /* bottom: 20px; */
+  color: #646464;
+  font-size: 17px;
+  font-family: "Inconsolata", monospace;
+
+  gap: 30px;
+  /* letter-spacing: 2px; */
+  text-transform: uppercase;
+  white-space: nowrap;
+  display: flex;
+  width: max-content;
+  font-weight: 200;
+  animation: scroll 30s linear infinite;
+}
+
+@media (min-width: 769px) {
+  .track {
+    font-size: 19px;
+  }
+
+  .fade {
+    mask-image: linear-gradient(to bottom, #000 70%, transparent 100%);
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Float logo */
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-3px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Glitch logo */
+@keyframes glitch {
+  0%,
+  93%,
+  100% {
+    background: url("/images/conference/logo.png");
+    background-size: cover;
+  }
+  94% {
+    background: url("/images/conference/logo-glitch1.png");
+    background-size: cover;
+  }
+  95% {
+    background: url("/images/conference/logo-glitch2.png");
+    background-size: cover;
+  }
+  96% {
+    background: url("/images/conference/logo-glitch3.png");
+    background-size: cover;
+  }
+  97% {
+    background: url("/images/conference/logo-glitch4.png");
+    background-size: cover;
+  }
+  98% {
+    background: url("/images/conference/logo-glitch2.png");
+    background-size: cover;
+  }
+  99% {
+    background: url("/images/conference/logo-glitch3.png");
+    background-size: cover;
+  }
+}
