@@ -1,4 +1,4 @@
-.sectionContainer {
+.bannerSection {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -50,14 +50,78 @@
   font-size: 17px;
   font-family: "Inconsolata", monospace;
 
-  gap: 30px;
+  gap: 20px;
   /* letter-spacing: 2px; */
   text-transform: uppercase;
   white-space: nowrap;
   display: flex;
   width: max-content;
   font-weight: 200;
-  animation: scroll 30s linear infinite;
+  animation: scroll 40s linear infinite;
+}
+
+/* ------------ */
+
+.saveTheDateSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+  position: relative;
+  z-index: 5;
+  margin: -90px auto 10px auto;
+  padding-bottom: 70px;
+  max-width: 1200px;
+}
+.saveTheDateSection > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 30px;
+}
+.saveTheDateTitle {
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 30px;
+}
+.saveTheDateDays {
+  align-items: center;
+  font-size: 18px;
+  text-align: center;
+  font-weight: bold;
+  line-height: 20px;
+}
+.saveTheDateButton {
+  position: absolute;
+  bottom: 0;
+  /* margin-left: 15px; */
+
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+/* ------------------ */
+
+.timelineSection {
+  padding: 80px 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.timelineSection h2 {
+  font-size: 20px;
+  margin: 0 0 6px 0;
+  text-transform: uppercase;
+}
+.timelineSection > p {
+  margin: 0;
+  font-size: 14px;
+  color: #646464;
 }
 
 @media (min-width: 769px) {
@@ -67,6 +131,31 @@
 
   .fade {
     mask-image: linear-gradient(to bottom, #000 70%, transparent 100%);
+  }
+  .saveTheDateSection {
+    padding-bottom: 0px;
+    margin-top: 0px;
+  }
+  .saveTheDateSection > div {
+    /* width: 60%; */
+    padding: 0;
+  }
+
+  .saveTheDateDays {
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  .saveTheDateButton {
+    position: relative;
+    bottom: 0;
+    margin-left: 0;
+    display: block;
+    width: unset;
+  }
+
+  .timelineSection {
+    padding: 60px 0;
   }
 }
 

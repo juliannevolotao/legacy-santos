@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <>
     <section>
-      
+      {/* colocar somente as redes sociais aqui por enquanto */}
     </section>
     </>
   );
