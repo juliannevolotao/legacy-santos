@@ -52,7 +52,7 @@
 .message {
   margin-top: 16px;
   color: rgb(93, 93, 93);
-  font-size: 14px;
+  font-size: 12px;
   opacity: 0;
   transform: translateY(10px);
   transition: all 0.3s ease;

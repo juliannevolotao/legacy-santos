@@ -2,6 +2,7 @@ import styles from "./conference.module.css";
 import RedirectButton from "../../components/conference/RedirectButton";
 import Timeline from "../../components/conference/Timeline";
 import LineUpCard from "../../components/conference/LineUpCard";
+import FAQ from "../../components/conference/Faq";
 
 const Conference = () => {
   const REDIRECT_URL = "https://articket.com.br/e/4095/legacy-conf";
@@ -117,6 +118,21 @@ const Conference = () => {
           ))}
         </ul>
       </section>
+
+      <section className={styles.ticketsSection}>
+        <div className={styles.ticketsContent}>
+          <h2> INGRESSOS </h2>
+          <p>
+            <i>
+              Você ainda não sabe tudo... Mas pode garantir que estará lá quando
+              acontecer. Adquira seu ingresso e esteja pronto para o que será
+              revelado.
+            </i>
+          </p>
+        </div>
+      </section>
+
+      <FAQ />
 
       <footer></footer>
     </>
