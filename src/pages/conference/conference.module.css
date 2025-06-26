@@ -124,7 +124,41 @@
   color: #646464;
 }
 
-@media (min-width: 769px) {
+/* ------------------- */
+
+.lineUpSection {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 30px 30px;
+}
+
+.lineUpSection h2 {
+  font-size: 20px;
+  margin: 0 0 6px 0;
+  text-transform: uppercase;
+}
+.lineUpSection > p {
+  margin: 0;
+  font-size: 14px;
+  color: #646464;
+}
+
+.lineUpList {
+  display: flex;
+  gap: 20px;
+  padding: 20px 0 0 0;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  list-style: none;
+  scrollbar-width: none; /* Firefox */
+  -webkit-overflow-scrolling: touch; /* Suaviza no iOS */
+}
+
+.lineUpList::-webkit-scrollbar {
+  display: none; /* Chrome/Safari */
+}
+
+@media (min-width: 768px) {
   .track {
     font-size: 19px;
   }
@@ -156,6 +190,17 @@
 
   .timelineSection {
     padding: 60px 0;
+  }
+  .lineUpSection {
+    padding: 60px 0;
+  }
+
+  .lineUpList {
+    flex-wrap: wrap;
+    overflow-x: unset;
+    scroll-snap-type: none;
+    justify-content: space-between;
+    gap: 46px;
   }
 }
 

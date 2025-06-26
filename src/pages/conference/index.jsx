@@ -1,9 +1,43 @@
 import styles from "./conference.module.css";
 import RedirectButton from "../../components/conference/RedirectButton";
 import Timeline from "../../components/conference/Timeline";
+import LineUpCard from "../../components/conference/LineUpCard";
 
 const Conference = () => {
   const REDIRECT_URL = "https://articket.com.br/e/4095/legacy-conf";
+
+  const LINEUP = [
+    {
+      name: "",
+      description: "",
+      image: "",
+    },
+    {
+      name: "",
+      description: "",
+      image: "",
+    },
+    {
+      name: "",
+      description: "",
+      image: "",
+    },
+    {
+      name: "",
+      description: "",
+      image: "",
+    },
+    {
+      name: "",
+      description: "",
+      image: "",
+    },
+    {
+      name: "",
+      description: "",
+      image: "",
+    },
+  ];
   return (
     <>
       <section className={styles.bannerSection}>
@@ -68,6 +102,23 @@ const Conference = () => {
         </p>
         <Timeline />
       </section>
+
+      <section className={styles.lineUpSection}>
+        <h2> LINE-UP </h2>
+        <p>
+          <i>
+            Cada nome aqui carrega uma palavra, uma missão e um impacto pra essa
+            geração.
+          </i>
+        </p>
+        <ul className={styles.lineUpList}>
+          {LINEUP.map(() => (
+            <LineUpCard />
+          ))}
+        </ul>
+      </section>
+
+      <footer></footer>
     </>
   );
 };
