@@ -6,7 +6,7 @@ const Timeline = () => {
       <div className={styles.line}></div>
 
       <div className={`${styles.step} ${styles.done}`}>
-        <p className={styles.date}>21/06</p>
+        <p className={styles.date}>28/06</p>
         <div className={styles.dot}></div>
         <p className={styles.text}>Pré-venda liberada</p>
       </div>

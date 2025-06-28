@@ -10,7 +10,7 @@ const faqData = [
   {
     question: "A partir de que idade posso participar?",
     answer:
-      "O evento é recomendado para jovens a partir de 18 anos. Menores de idade devem estar acompanhados ou com autorização.",
+      "O evento é voltado para jovens mas todos são bem-vindos! Não há restrição de idade, então traga seus amigos, familiares e quem mais quiser.",
   },
   {
     question: "O que está incluso no ingresso?",

@@ -6,6 +6,8 @@
   height: 80vh;
   position: relative;
   overflow: hidden;
+
+  animation: fadeInUp 0.8s ease forwards;
 }
 
 .fade {
@@ -28,7 +30,7 @@
   background: url("/images/conference/logo.png");
   background-size: cover;
   background-position: center;
-  animation: float 4s ease-in-out infinite, glitch 12s infinite steps(1);
+  animation: float 2s ease-in-out infinite, glitch 12s infinite steps(1);
   z-index: 2;
 }
 
@@ -167,6 +169,10 @@
   padding: 80px 30px 40px;
   margin-top: -80px;
   min-height: 200px;
+
+  background: url("/images/conference/background2.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 .ticketsContent {
@@ -185,6 +191,14 @@
   color: #ffd5c8;
 }
 
+.ticketsList {
+  display: flex;
+  gap: 20px;
+  padding: 20px 0 0 0;
+  list-style: none;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 
 @media (min-width: 768px) {
   .track {
@@ -223,16 +237,22 @@
     padding: 60px 0;
   }
 
-  .lineUpList {
+  .lineUpList,
+  .ticketsList {
     flex-wrap: wrap;
     overflow-x: unset;
     scroll-snap-type: none;
     justify-content: space-between;
     gap: 46px;
   }
+  
+  .ticketsList {
+    gap: 10px;
+
+  }
 
   .ticketsSection {
-    padding: 270px 30px 40px;
+    padding: 270px 30px 60px;
     margin-top: -250px;
   }
 }
@@ -290,5 +310,16 @@
   99% {
     background: url("/images/conference/logo-glitch3.png");
     background-size: cover;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
