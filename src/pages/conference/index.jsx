@@ -71,13 +71,6 @@ const Conference = () => {
       isActive: false,
       image: "/images/conference/tickets/lote3.png",
     },
-    {
-      status: "Comprar",
-      titulo: "Lote 4",
-      valor: "",
-      isActive: false,
-      image: "/images/conference/tickets/lote4.png",
-    },
   ];
   return (
     <>

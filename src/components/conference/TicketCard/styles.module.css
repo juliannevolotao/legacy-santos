@@ -1,7 +1,7 @@
 .cardContainer {
   width: calc(50% - 20px);
   max-width: 180px;
-  height: 200px;
+  /* height: 250px; */
   /* background-color: white; */
   border-radius: 20px;
   position: relative;

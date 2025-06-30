@@ -21,7 +21,7 @@ const Home = () => {
           </li>
           <li className={styles.socialMediaListItem}>
             <a
-              href="https://chat.whatsapp.com/HGsUX8ZNn8P9acrwL1BEB1"
+              href="https://chat.whatsapp.com/JepXdgO3OVTFqy3hEIk7UH"
               target="_blank"
               rel="noopener noreferrer"
             >

@@ -211,6 +211,8 @@
   .saveTheDateSection {
     padding-bottom: 0px;
     margin-top: 0px;
+    /* padding: 0 30px; */
+    width: 95%;
   }
   .saveTheDateSection > div {
     /* width: 60%; */
@@ -232,9 +234,11 @@
 
   .timelineSection {
     padding: 60px 0;
+    width: 95%;
   }
   .lineUpSection {
     padding: 60px 0;
+    width: 95%;
   }
 
   .lineUpList,
@@ -245,10 +249,9 @@
     justify-content: space-between;
     gap: 46px;
   }
-  
+
   .ticketsList {
     gap: 10px;
-
   }
 
   .ticketsSection {
@@ -272,7 +275,7 @@
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-3px);
+    transform: translateY(-5px);
   }
   100% {
     transform: translateY(0);
