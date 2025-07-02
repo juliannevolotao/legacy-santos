@@ -14,21 +14,21 @@ const Timeline = () => {
       <div className={`${styles.step}`}>
         <p className={styles.date}></p>
         <div className={styles.dot}></div>
-        <p className={styles.text}>1º lote</p>
+        <p className={styles.text}>1º lote <br /> Divulgação do tema</p>
       </div>
 
       <div className={`${styles.step}`}>
         <p className={styles.date}></p>
         <div className={styles.dot}></div>
         <p className={styles.text}>
-          2º lote <br /> Divulgação do tema
+          2º lote <br /> Divulgação da line-up
         </p>
       </div>
 
       <div className={styles.step}>
         <p className={styles.date}></p>
         <div className={styles.dot}></div>
-        <p className={styles.text}>3º lote <br /> Divulgação da line-up</p>
+        <p className={styles.text}>3º lote </p>
       </div>
 
       <div className={styles.step}>
