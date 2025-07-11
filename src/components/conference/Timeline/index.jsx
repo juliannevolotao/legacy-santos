@@ -11,10 +11,10 @@ const Timeline = () => {
         <p className={styles.text}>Pré-venda liberada</p>
       </div>
 
-      <div className={`${styles.step}`}>
+      <div className={`${styles.step} ${styles.done}`}>
         <p className={styles.date}></p>
         <div className={styles.dot}></div>
-        <p className={styles.text}>1º lote <br /> Divulgação do tema</p>
+        <p className={styles.text}>1º lote </p>
       </div>
 
       <div className={`${styles.step}`}>

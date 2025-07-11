@@ -47,15 +47,15 @@ const Conference = () => {
       titulo: "Pré-Venda",
       valor: "65,00",
       isActive: true,
-      image: "/images/conference/tickets/pre-venda.png",
-      url: REDIRECT_URL,
+      image: "/images/conference/tickets/pre-venda-esgotado.png",
     },
     {
       status: "Comprar",
       titulo: "Lote 1",
       valor: "",
-      isActive: false,
+      isActive: true,
       image: "/images/conference/tickets/lote1.png",
+      url: REDIRECT_URL,
     },
     {
       status: "Comprar",
@@ -79,31 +79,31 @@ const Conference = () => {
 
         <div className={styles.caroussel}>
           <div className={styles.track}>
-            <span>PRÉ-VENDA LIBERADA</span>
+            <span>LOTE 1 LIBERADO</span>
             <span>FAÇA SUA INSCRIÇÃO</span>
-            <span>PRÉ-VENDA LIBERADA</span>
+            <span>LOTE 1 LIBERADO</span>
             <span>FAÇA SUA INSCRIÇÃO</span>
-            <span>PRÉ-VENDA LIBERADA</span>
+            <span>LOTE 1 LIBERADO</span>
             <span>FAÇA SUA INSCRIÇÃO</span>
-            <span>PRÉ-VENDA LIBERADA</span>
+            <span>LOTE 1 LIBERADO</span>
             <span>FAÇA SUA INSCRIÇÃO</span>
-            <span>PRÉ-VENDA LIBERADA</span>
+            <span>LOTE 1 LIBERADO</span>
             <span>FAÇA SUA INSCRIÇÃO</span>
-            <span>PRÉ-VENDA LIBERADA</span>
+            <span>LOTE 1 LIBERADO</span>
             <span>FAÇA SUA INSCRIÇÃO</span>
-            <span>PRÉ-VENDA LIBERADA</span>
+            <span>LOTE 1 LIBERADO</span>
             <span>FAÇA SUA INSCRIÇÃO</span>
-            <span>PRÉ-VENDA LIBERADA</span>
+            <span>LOTE 1 LIBERADO</span>
             <span>FAÇA SUA INSCRIÇÃO</span>
-            <span>PRÉ-VENDA LIBERADA</span>
+            <span>LOTE 1 LIBERADO</span>
             <span>FAÇA SUA INSCRIÇÃO</span>
-            <span>PRÉ-VENDA LIBERADA</span>
+            <span>LOTE 1 LIBERADO</span>
             <span>FAÇA SUA INSCRIÇÃO</span>
-            <span>PRÉ-VENDA LIBERADA</span>
+            <span>LOTE 1 LIBERADO</span>
             <span>FAÇA SUA INSCRIÇÃO</span>
-            <span>PRÉ-VENDA LIBERADA</span>
+            <span>LOTE 1 LIBERADO</span>
             <span>FAÇA SUA INSCRIÇÃO</span>
-            <span>PRÉ-VENDA LIBERADA</span>
+            <span>LOTE 1 LIBERADO</span>
             <span>FAÇA SUA INSCRIÇÃO</span>
           </div>
         </div>

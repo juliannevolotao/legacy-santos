@@ -26,7 +26,7 @@
   position: absolute;
   height: 100%;
   background-color: #ff3c01;
-  width: 10%; /* Progresso (ajuste manual) */
+  width: 30%; /* Progresso (ajuste manual) */
   z-index: 1;
   border-radius: 10px;
   transition: width 0.8s ease-in-out;
@@ -92,7 +92,7 @@
 
   .line::before {
     width: 100%;
-    height: 10%; /* Progresso na vertical */
+    height: 33%; /* Progresso na vertical */
   }
 
   .step {
