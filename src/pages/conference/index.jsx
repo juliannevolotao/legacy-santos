@@ -5,7 +5,7 @@ import LineUpCard from "../../components/conference/LineUpCard";
 import FAQ from "../../components/conference/Faq";
 import TicketCard from "../../components/conference/TicketCard";
 
-const Conference = () => {
+const PreConference = () => {
   const REDIRECT_URL = "https://articket.com.br/e/4095/legacy-conf";
 
   const LINEUP = [
@@ -197,4 +197,4 @@ const Conference = () => {
   );
 };
 
-export default Conference;
+export default PreConference;

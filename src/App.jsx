@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './pages/home'
-import Conference from './pages/conference'
+import Conference from './pages/conference/finalConf'
 
 function App() {
 

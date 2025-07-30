@@ -1,6 +1,6 @@
 /* Botão */
 .buyButton {
-  background-color: #ff3c01;
+  background-color: #fd451b;
   color: white;
   font-weight: bold;
   text-transform: uppercase;
@@ -17,7 +17,7 @@
   outline: none;
   z-index: 6;
   transition: 0.5s;
-  box-shadow: 6px 6px 0 white;
+  box-shadow: 6px 6px 0 rgb(17, 41, 255);
   transform: skewX(-15deg);
   /* width: 60%; */
 
@@ -40,7 +40,7 @@
 }
 
 .buyButton:hover {
-  box-shadow: 6px 6px 0 rgb(31, 141, 136);
+  box-shadow: 6px 6px 0 rgb(17, 41, 255);
   color: white;
 
   span:nth-of-type(2) {
@@ -84,7 +84,7 @@
     fill: white;
   }
   50% {
-    fill: rgb(31, 141, 136);
+    fill: rgb(17, 41, 255);
   }
   100% {
     fill: white;
