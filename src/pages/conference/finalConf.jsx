@@ -1,9 +1,79 @@
+import LineUpCard from "../../components/conference/LineUpCard";
 import RedirectButton from "../../components/conference/RedirectButton";
+import Timeline from "../../components/conference/Timeline";
+import TicketCard from "../../components/conference/TicketCard";
 import styles from "./conference.module.css";
 import finalStyles from "./final.module.css";
+import FAQ from "../../components/conference/Faq";
 
 const FinalConference = () => {
   const REDIRECT_URL = "https://articket.com.br/e/4095/legacy-conf";
+
+  const LINEUP = [
+    {
+      name: "FHOP",
+      description: "A FHOP (Florianópolis House of Prayer) music começou do transbordar da casa de oração em Florianópolis, onde líderes de louvor,  muitas vezes cantando as Escrituras em uma sala vazia viram  surgir canções genuínas que abençoariam a igreja de Cristo na Terra. ",
+      image: "/images/conference/lineup/fhop.jpg",
+    },
+    {
+      name: "",
+      description: "",
+      image: "",
+    },
+    {
+      name: "",
+      description: "",
+      image: "",
+    },
+    {
+      name: "",
+      description: "",
+      image: "",
+    },
+    {
+      name: "",
+      description: "",
+      image: "",
+    },
+    {
+      name: "",
+      description: "",
+      image: "",
+    },
+  ];
+
+  const TICKETS = [
+    {
+      status: "Comprar",
+      titulo: "Pré-Venda",
+      valor: "65,00",
+      isActive: true,
+      image: "/images/conference/tickets/pre-venda-esgotado.png",
+    },
+    {
+      status: "Comprar",
+      titulo: "Lote 1",
+      valor: "",
+      isActive: true,
+      image: "/images/conference/tickets/lote1.png",
+      url: REDIRECT_URL,
+    },
+    {
+      status: "Comprar",
+      titulo: "Lote 2",
+      valor: "",
+      isActive: false,
+      image: "/images/conference/tickets/lote2.png",
+    },
+    {
+      status: "Comprar",
+      titulo: "Lote 3",
+      valor: "",
+      isActive: false,
+      image: "/images/conference/tickets/lote3.png",
+    },
+  ];
+
   return (
     <>
       <section className={finalStyles.firstBanner}>
@@ -59,29 +129,97 @@ const FinalConference = () => {
         {/* <div className={styles.fade}></div> */}
       </section>
 
-      <div className={finalStyles.shape1}></div>
+      {/* <div className={finalStyles.shape1}></div> */}
       <section className={finalStyles.secondBanner}>
         <div className={finalStyles.container}>
-          <h2>Quando o Céu Invade a Terra</h2>
+          <div className={finalStyles.textContainer}>
+            <h2>Quando o Céu Invade a Terra</h2>
 
-          <p>
-            <strong>Quando o céu invade a terra</strong> não é apenas um tema — é um clamor.
-            Representa o momento em que a atmosfera do céu desce sobre nós,
-            transformando ambientes, vidas e realidades. É sobre <strong>viver o
-            sobrenatural de Deus </strong> aqui e agora, experimentando Sua presença de
-            forma palpável, intensa e transformadora.
-            <br />
-            Na Legacy Conference 2025, cremos que o céu vai invadir a terra por
-            meio de adoração sincera, palavras proféticas e corações rendidos.
-            Será um tempo onde a vontade de Deus será feita na terra como no
-            céu, e uma geração será marcada para viver o propósito eterno.
-          </p>
+            <p>
+              <strong>Quando o céu invade a terra</strong> não é apenas um tema
+              — é um clamor. Representa o momento em que a atmosfera do céu
+              desce sobre nós, transformando ambientes, vidas e realidades. É
+              sobre <strong>viver o sobrenatural de Deus </strong> aqui e agora,
+              experimentando Sua presença de forma palpável, intensa e
+              transformadora.
+              <br />
+              Na Legacy Conference 2025, cremos que o céu vai invadir a terra
+              por meio de adoração sincera, palavras proféticas e corações
+              rendidos. Será um tempo onde a vontade de Deus será feita na terra
+              como no céu, e uma geração será marcada para viver o propósito
+              eterno.
+            </p>
+          </div>
           <div
             title="Quando o Céu Invade a Terra"
             className={finalStyles.earth}
           ></div>
         </div>
       </section>
+
+      <section
+        className={`${styles.timelineSection} ${finalStyles.timelineSection}`}
+      >
+        <div className={finalStyles.container}>
+          <div className={finalStyles.textContainer}>
+            <h2> Rumo à Legacy Conference </h2>
+            <p>
+              <i>
+                Acompanhe os marcos que nos preparam para viver algo
+                extraordinário na Legacy Conference.
+              </i>
+            </p>
+          </div>
+          <Timeline />
+        </div>
+      </section>
+
+      <section className={`${styles.lineUpSection} ${finalStyles.lineUpSection}`}>
+        <div className={finalStyles.lineUpContainer}>
+          <div className={finalStyles.textContainer}>
+            <h2> LINE-UP </h2>
+            <p>
+              <i>
+                Cada nome aqui carrega uma palavra, uma missão e um impacto pra
+                essa geração.
+              </i>
+            </p>
+          </div>
+          <ul className={styles.lineUpList}>
+            {LINEUP.map((item) => (
+              <LineUpCard key={item.name} {...item} />
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      <section className={styles.ticketsSection}>
+        <div className={styles.ticketsContent}>
+          <h2> INGRESSOS </h2>
+          <p>
+            <i>
+              Você ainda não sabe tudo... Mas pode garantir que estará lá quando
+              acontecer. Adquira seu ingresso e esteja pronto para o que será
+              revelado.
+            </i>
+          </p>
+
+          <ul className={styles.ticketsList}>
+            {TICKETS.map((ticket) => (
+              <TicketCard
+                titulo={ticket.titulo}
+                status={ticket.status}
+                valor={ticket.valor}
+                isActive={ticket.isActive}
+                image={ticket.image}
+                url={ticket.url}
+              />
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      <FAQ />
     </>
   );
 };

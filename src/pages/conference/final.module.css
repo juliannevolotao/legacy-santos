@@ -4,14 +4,18 @@
   align-items: center;
   /* justify-content: center; */
   height: 80vh;
-  max-height: 70vh;
+  max-height: 75vh;
   position: relative;
   overflow: hidden;
-  padding: 80px 0;
+  padding: 50px 0;
 
   animation: fadeInUp 0.8s ease forwards;
   /* box-sizing: border-box; */
   background-color: #c9ff3a;
+
+  background: url("/images/conference/background3.jpg");
+  background-size: cover;
+  background-position: center;
 
   p {
     font-size: 14px;
@@ -30,10 +34,11 @@
   height: 100%;
   align-items: center;
   flex-direction: column;
+  padding: 60px 0;
 }
 
 .mainLogo {
-  width: min(90vw, 690px);
+  width: min(90vw, 400px);
   aspect-ratio: 800 / 572;
   background: url("/images/conference/logo2.png");
   background-size: cover;
@@ -63,23 +68,27 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 80vh;
+  height: 85vh;
   position: relative;
   /* overflow: hidden; */
 
   animation: fadeInUp 0.8s ease forwards;
   background-color: #18d7e9;
 
-  background: url("/images/conference/background3.jpg");
+  background: url("/images/conference/background4.jpg");
   background-size: cover;
   background-position: center;
+}
 
-  p {
-    font-size: 14px;
-    color: #fd4d1b;
-    margin-top: 20px;
-    font-weight: 400;
-  }
+.textContainer h2 {
+  font-size: 20px;
+  margin: 0 0 6px 0;
+  text-transform: uppercase;
+}
+.textContainer > p {
+  margin: 0;
+  font-size: 14px;
+  color: #ffffff;
 }
 
 .shape1 {
@@ -101,8 +110,46 @@
   background: url("/images/conference/planeta.png");
   background-size: cover;
   background-position: center;
-  /* animation: float 2s ease-in-out infinite; */
+  animation: spin 3s ease-in-out infinite;
   z-index: 2;
+}
+
+.timelineSection {
+  background: url("/images/conference/background5.jpg");
+  background-size: cover;
+  background-position: center;
+
+  max-width: unset !important;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.timelineSection p {
+  font-size: 14px;
+}
+
+.lineUpSection {
+  max-width: unset;
+  padding: 60px 40px;
+  margin: 0;
+
+  background: url("/images/conference/background6.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.lineUpContainer {
+  max-width: 1200px;
+  height: 70vh;
+  min-height: 580px;
+}
+.lineUpContainer h2,
+.lineUpContainer p {
+  color: #253add;
 }
 
 @media (min-width: 768px) {
@@ -118,5 +165,18 @@
   }
   100% {
     transform: translateY(0);
+  }
+}
+
+/* Spin logo */
+@keyframes spin {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(0);
   }
 }
