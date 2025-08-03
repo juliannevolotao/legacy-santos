@@ -85,15 +85,16 @@
 }
 
 .highlight {
-  background-color: white;
-  border: 1px solid white;
+  background-color: #d1fc5e;
+  border: 1px solid transparent;
 
   a,
   h2,
   p,
   span,
   svg {
-    color: black;
+    color: #253add;
+    font-weight: bold;
   }
 }
 
