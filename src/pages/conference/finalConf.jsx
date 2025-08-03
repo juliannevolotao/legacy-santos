@@ -6,13 +6,16 @@ import styles from "./conference.module.css";
 import finalStyles from "./final.module.css";
 import FAQ from "../../components/conference/Faq";
 
+import { Instagram, AppWindow } from "lucide-react";
+
 const FinalConference = () => {
   const REDIRECT_URL = "https://articket.com.br/e/4095/legacy-conf";
 
   const LINEUP = [
     {
       name: "FHOP",
-      description: "A FHOP (Florianópolis House of Prayer) music começou do transbordar da casa de oração em Florianópolis, onde líderes de louvor,  muitas vezes cantando as Escrituras em uma sala vazia viram  surgir canções genuínas que abençoariam a igreja de Cristo na Terra. ",
+      description:
+        "A FHOP (Florianópolis House of Prayer) music começou do transbordar da casa de oração em Florianópolis, onde líderes de louvor,  muitas vezes cantando as Escrituras em uma sala vazia viram  surgir canções genuínas que abençoariam a igreja de Cristo na Terra. ",
       image: "/images/conference/lineup/fhop.jpg",
     },
     {
@@ -80,7 +83,7 @@ const FinalConference = () => {
         <div className={finalStyles.container}>
           <div title="Legacy Conference" className={finalStyles.mainLogo}></div>
 
-          <div>
+          <div className={finalStyles.firstBannerText}>
             <img
               src="/images/conference/logo-final-azul.png"
               alt="Legacy Conference"
@@ -91,9 +94,9 @@ const FinalConference = () => {
               intensas, adoração profunda e experiências sobrenaturais. Um
               ambiente onde o céu invade a terra e corações são transformados.
             </p>
-          </div>
 
           <RedirectButton redirectUrl={REDIRECT_URL} />
+          </div>
         </div>
 
         <div className={`${styles.caroussel} ${finalStyles.caroussel}`}>
@@ -174,7 +177,9 @@ const FinalConference = () => {
         </div>
       </section>
 
-      <section className={`${styles.lineUpSection} ${finalStyles.lineUpSection}`}>
+      <section
+        className={`${styles.lineUpSection} ${finalStyles.lineUpSection}`}
+      >
         <div className={finalStyles.lineUpContainer}>
           <div className={finalStyles.textContainer}>
             <h2> LINE-UP </h2>
@@ -185,7 +190,7 @@ const FinalConference = () => {
               </i>
             </p>
           </div>
-          <ul className={styles.lineUpList}>
+          <ul className={`${styles.lineUpList} ${finalStyles.lineUpList}`}>
             {LINEUP.map((item) => (
               <LineUpCard key={item.name} {...item} />
             ))}
@@ -193,18 +198,23 @@ const FinalConference = () => {
         </div>
       </section>
 
-      <section className={styles.ticketsSection}>
-        <div className={styles.ticketsContent}>
-          <h2> INGRESSOS </h2>
-          <p>
-            <i>
-              Você ainda não sabe tudo... Mas pode garantir que estará lá quando
-              acontecer. Adquira seu ingresso e esteja pronto para o que será
-              revelado.
-            </i>
-          </p>
-
-          <ul className={styles.ticketsList}>
+      <section
+        className={`${finalStyles.ticketsSection} ${styles.ticketsSection} `}
+      >
+        <div
+          className={`${styles.ticketsContent} ${finalStyles.ticketsContent}`}
+        >
+          <div className={finalStyles.textContainer}>
+            <h2> INGRESSOS </h2>
+            <p>
+              <i>
+                Você ainda não sabe tudo... Mas pode garantir que estará lá
+                quando acontecer. Adquira seu ingresso e esteja pronto para o
+                que será revelado.
+              </i>
+            </p>
+          </div>
+          <ul className={`${styles.ticketsList} ${finalStyles.ticketsList}`}>
             {TICKETS.map((ticket) => (
               <TicketCard
                 titulo={ticket.titulo}
@@ -220,6 +230,29 @@ const FinalConference = () => {
       </section>
 
       <FAQ />
+
+      <footer className={finalStyles.footer}>
+        <ul>
+          <li>
+            <a
+              href="https://www.instagram.com/legacylagoinhasantos/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Instagram className={finalStyles.footerIcon} />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.legacysantos.com.br"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <AppWindow className={finalStyles.footerIcon} />
+            </a>
+          </li>
+        </ul>
+      </footer>
     </>
   );
 };

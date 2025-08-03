@@ -80,6 +80,13 @@
 
 @media (min-width: 768px) {
   .cardContainer {
+    max-width: 320px;
+    flex-shrink: 1;
+    scroll-snap-align: unset;
+  }
+}
+@media (min-width: 1024px) {
+  .cardContainer {
     max-width: 350px;
     flex-shrink: 1;
     scroll-snap-align: unset;

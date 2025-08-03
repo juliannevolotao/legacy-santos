@@ -43,29 +43,31 @@ const FAQ = () => {
 
   return (
     <section className={styles.faqSection}>
-      <h2 className={styles.title}>Perguntas Frequentes</h2>
-      <ul className={styles.faqList}>
-        {faqData.map((item, index) => (
-          <li key={index} className={styles.faqItem}>
-            <button
-              className={styles.question}
-              onClick={() => toggleIndex(index)}
-            >
-              {item.question}
-              <span className={styles.icon}>
-                {openIndex === index ? "−" : "+"}
-              </span>
-            </button>
-            <div
-              className={`${styles.answer} ${
-                openIndex === index ? styles.open : ""
-              }`}
-            >
-              <p>{item.answer}</p>
-            </div>
-          </li>
-        ))}
-      </ul>
+      <div className={styles.faqContainer}>
+        <h2 className={styles.title}>Perguntas Frequentes</h2>
+        <ul className={styles.faqList}>
+          {faqData.map((item, index) => (
+            <li key={index} className={styles.faqItem}>
+              <button
+                className={styles.question}
+                onClick={() => toggleIndex(index)}
+              >
+                {item.question}
+                <span className={styles.icon}>
+                  {openIndex === index ? "−" : "+"}
+                </span>
+              </button>
+              <div
+                className={`${styles.answer} ${
+                  openIndex === index ? styles.open : ""
+                }`}
+              >
+                <p>{item.answer}</p>
+              </div>
+            </li>
+          ))}
+        </ul>
+      </div>
     </section>
   );
 };
