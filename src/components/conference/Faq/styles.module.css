@@ -1,8 +1,8 @@
 .faqSection {
   /* padding: 60px 20px; */
   /* color: #fff; */
-  background: url("/images/conference/background8.jpg");
-
+  background-image: url("/images/conference/background8.jpg");
+  background-color: #253add;
   background-size: cover;
   background-position: center;
   max-width: unset !important;

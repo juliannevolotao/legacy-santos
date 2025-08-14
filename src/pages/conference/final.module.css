@@ -13,7 +13,7 @@
   /* box-sizing: border-box; */
   background-color: #c9ff3a;
 
-  background: url("/images/conference/background3.jpg");
+  background-image: url("/images/conference/background3.jpg");
   background-size: cover;
   background-position: center;
 
@@ -75,7 +75,7 @@
   animation: fadeInUp 0.8s ease forwards;
   background-color: #18d7e9;
 
-  background: url("/images/conference/background4.jpg");
+  background-image: url("/images/conference/background4.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -115,9 +115,10 @@
 }
 
 .timelineSection {
-  background: url("/images/conference/background5.jpg");
+  background-image: url("/images/conference/background5.jpg");
   background-size: cover;
   background-position: center;
+  background-color: #fc447a;
 
   max-width: unset !important;
   padding: 0;
@@ -139,9 +140,13 @@
   margin: 0;
   width: 100%;
 
-  background: url("/images/conference/background6.jpg");
+  background-color: #d1fc5e;
+  background-image: url("/images/conference/background6.jpg");
   background-size: cover;
   background-position: center;
+}
+.lineUpSection .textContainer {
+  width: calc(100% - 80px);
 }
 .lineUpContainer {
   max-width: 1200px;
@@ -154,7 +159,8 @@
 }
 
 .ticketsSection {
-  background: url("/images/conference/background7.jpg");
+  background-color: #d1fc5e;
+  background-image: url("/images/conference/background7.jpg");
   background-size: cover;
   background-position: center;
 }

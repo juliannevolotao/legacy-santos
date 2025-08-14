@@ -25,8 +25,8 @@ const Timeline = () => {
         </p>
       </div>
 
-      <div className={`${styles.step}`}>
-        <p className={styles.date}>Em breve</p>
+      <div className={`${styles.step} ${styles.done}`}>
+        <p className={styles.date}>09/08</p>
         <div className={styles.dot}></div>
         <p className={styles.text}>
           2° lote
@@ -34,7 +34,7 @@ const Timeline = () => {
       </div>
 
       <div className={`${styles.step}`}>
-        <p className={styles.date}></p>
+        <p className={styles.date}>Em breve</p>
         <div className={styles.dot}></div>
         <p className={styles.text}>
           3° lote

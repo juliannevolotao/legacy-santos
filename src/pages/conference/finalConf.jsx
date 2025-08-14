@@ -19,9 +19,10 @@ const FinalConference = () => {
       image: "/images/conference/lineup/fhop.jpg",
     },
     {
-      name: "",
-      description: "",
-      image: "",
+      name: "Pr. Isaías Fernandes",
+      description:
+        "Isaías Fernandes é pastor, teólogo, advogado, professor, marido da Nubia e pai da Ísis. Atualmente é pastor auxiliar na Igreja Lagoinha Matriz. Também é o professor da Escola Bíblica Dominical e do Seminário Teológico Carisma.",
+      image: "/images/conference/lineup/isaias.jpg",
     },
     {
       name: "",
@@ -58,15 +59,16 @@ const FinalConference = () => {
       titulo: "Lote 1",
       valor: "",
       isActive: true,
-      image: "/images/conference/tickets/lote1.png",
-      url: REDIRECT_URL,
+      image: "/images/conference/tickets/lote1-esgotado.png",
+      
     },
     {
       status: "Comprar",
       titulo: "Lote 2",
       valor: "",
-      isActive: false,
+      isActive: true,
       image: "/images/conference/tickets/lote2.png",
+      url: REDIRECT_URL,
     },
     {
       status: "Comprar",
@@ -95,7 +97,7 @@ const FinalConference = () => {
               ambiente onde o céu invade a terra e corações são transformados.
             </p>
 
-          <RedirectButton redirectUrl={REDIRECT_URL} />
+            <RedirectButton redirectUrl={REDIRECT_URL} />
           </div>
         </div>
 
