@@ -91,19 +91,6 @@
   color: #ffffff;
 }
 
-.shape1 {
-  width: 100%;
-  height: 100%;
-  margin-top: -30%;
-  background: url("/images/conference/forma.png");
-  background-size: cover;
-  background-position: center;
-  /* z-index: 6; */
-  aspect-ratio: 1506 / 470;
-  width: min(100vw, 100vw);
-  position: sticky;
-}
-
 .earth {
   width: min(90vw, 450px);
   aspect-ratio: 1671 / 1326;

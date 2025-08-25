@@ -134,7 +134,6 @@ const FinalConference = () => {
         {/* <div className={styles.fade}></div> */}
       </section>
 
-      {/* <div className={finalStyles.shape1}></div> */}
       <section className={finalStyles.secondBanner}>
         <div className={finalStyles.container}>
           <div className={finalStyles.textContainer}>
