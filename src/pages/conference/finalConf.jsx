@@ -25,9 +25,9 @@ const FinalConference = () => {
       image: "/images/conference/lineup/isaias.jpg",
     },
     {
-      name: "",
-      description: "",
-      image: "",
+      name: "Giovana Chartres",
+      description: "Giovana Chartres é cantora e compositora cristã. Ganhou destaque nas redes sociais com seus vídeos descontraídos e também tem se dedicado à adoração por meio da música. Sua missão tem sido tocar vidas e propagar o Reino.",
+      image: "/images/conference/lineup/giovana.jpg",
     },
     {
       name: "",
