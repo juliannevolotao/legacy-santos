@@ -103,32 +103,38 @@ const FinalConference = () => {
 
         <div className={`${styles.caroussel} ${finalStyles.caroussel}`}>
           <div className={`${styles.track} ${finalStyles.track}`}>
-            <span>LOTE 2 LIBERADO</span>
+            <span>ESTÁ CHEGANDO O DIA!!</span>
+            <span> - </span>
             <span>FAÇA SUA INSCRIÇÃO</span>
-            <span>LOTE 2 LIBERADO</span>
+            <span> - </span>
+            <span>ESTÁ CHEGANDO O DIA!!</span>
+            <span> - </span>
             <span>FAÇA SUA INSCRIÇÃO</span>
-            <span>LOTE 2 LIBERADO</span>
+            <span> - </span>
+            <span>ESTÁ CHEGANDO O DIA!!</span>
+            <span> - </span>
             <span>FAÇA SUA INSCRIÇÃO</span>
-            <span>LOTE 2 LIBERADO</span>
+            <span> - </span>
+            <span>ESTÁ CHEGANDO O DIA!!</span>
+            <span> - </span>
             <span>FAÇA SUA INSCRIÇÃO</span>
-            <span>LOTE 2 LIBERADO</span>
+            <span> - </span>
+            <span>ESTÁ CHEGANDO O DIA!!</span>
+            <span> - </span>
             <span>FAÇA SUA INSCRIÇÃO</span>
-            <span>LOTE 2 LIBERADO</span>
+            <span> - </span>
+            <span>ESTÁ CHEGANDO O DIA!!</span>
+            <span> - </span>
             <span>FAÇA SUA INSCRIÇÃO</span>
-            <span>LOTE 2 LIBERADO</span>
+            <span> - </span>
+            <span>ESTÁ CHEGANDO O DIA!!</span>
+            <span> - </span>
             <span>FAÇA SUA INSCRIÇÃO</span>
-            <span>LOTE 2 LIBERADO</span>
+            <span> - </span>
+            <span>ESTÁ CHEGANDO O DIA!!</span>
+            <span> - </span>
             <span>FAÇA SUA INSCRIÇÃO</span>
-            <span>LOTE 2 LIBERADO</span>
-            <span>FAÇA SUA INSCRIÇÃO</span>
-            <span>LOTE 2 LIBERADO</span>
-            <span>FAÇA SUA INSCRIÇÃO</span>
-            <span>LOTE 2 LIBERADO</span>
-            <span>FAÇA SUA INSCRIÇÃO</span>
-            <span>LOTE 2 LIBERADO</span>
-            <span>FAÇA SUA INSCRIÇÃO</span>
-            <span>LOTE 2 LIBERADO</span>
-            <span>FAÇA SUA INSCRIÇÃO</span>
+            <span> - </span>
           </div>
         </div>
         {/* <div className={styles.fade}></div> */}
