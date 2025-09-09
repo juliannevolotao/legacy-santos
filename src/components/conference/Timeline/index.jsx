@@ -20,31 +20,25 @@ const Timeline = () => {
       <div className={`${styles.step} ${styles.done}`}>
         <p className={styles.date}>29/07</p>
         <div className={styles.dot}></div>
-        <p className={styles.text}>
-          Divulgação do tema
-        </p>
+        <p className={styles.text}>Divulgação do tema</p>
       </div>
 
       <div className={`${styles.step} ${styles.done}`}>
         <p className={styles.date}>09/08</p>
         <div className={styles.dot}></div>
-        <p className={styles.text}>
-          2° lote
-        </p>
+        <p className={styles.text}>2° lote</p>
       </div>
 
-      <div className={`${styles.step}`}>
-        <p className={styles.date}>Em breve</p>
-        <div className={styles.dot}></div>
-        <p className={styles.text}>
-          3° lote
-        </p>
-      </div>
-
-      <div className={styles.step}>
-        <p className={styles.date}></p>
+      <div className={`${styles.step} ${styles.done}`}>
+        <p className={styles.date}>03/09</p>
         <div className={styles.dot}></div>
         <p className={styles.text}>Line-Up completa </p>
+      </div>
+
+      <div className={`${styles.step} ${styles.done}`}>
+        <p className={styles.date}>06/09</p>
+        <div className={styles.dot}></div>
+        <p className={styles.text}>3° lote</p>
       </div>
 
       <div className={styles.step}>

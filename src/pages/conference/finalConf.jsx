@@ -26,23 +26,24 @@ const FinalConference = () => {
     },
     {
       name: "Giovana Chartres",
-      description: "Giovana Chartres é cantora e compositora cristã. Ganhou destaque nas redes sociais com seus vídeos descontraídos e também tem se dedicado à adoração por meio da música. Sua missão tem sido tocar vidas e propagar o Reino.",
+      description:
+        "Giovana Chartres é cantora e compositora cristã. Ganhou destaque nas redes sociais com seus vídeos descontraídos e também tem se dedicado à adoração por meio da música. Sua missão tem sido tocar vidas e propagar o Reino.",
       image: "/images/conference/lineup/giovana.jpg",
     },
     {
-      name: "",
-      description: "",
-      image: "",
+      name: "Cultura do Céu",
+      description: "O Ministério Cultura do Céu foi Criado pelo cantor Davi Fernandes e seus filhos Kaleb e Josh, o Ministério Cultura do Céu nasceu com o propósito de conduzir pessoas a um encontro com Deus por meio da música.",
+      image: "/images/conference/lineup/cultura.jpg",
     },
     {
-      name: "",
-      description: "",
-      image: "",
+      name: "Pr. Daniel Santana",
+      description: "Daniel Santana é pastor na Igreja Lagoinha Santos, onde exerce seu ministério com dedicação e paixão. Casado com Renata, pai de Davi, Elisa e Helena. É graduado no seminário Teológico Carisma, onde aprofundou seus estudos sobre a Palavra de Deus.",
+      image: "/images/conference/lineup/daniel.jpg",
     },
     {
-      name: "",
-      description: "",
-      image: "",
+      name: "Legacy Crew",
+      description: "A Legacy Crew é formada pelos líderes e músicos que conduzem nossa jornada com energia, propósito e adoração. Eles preparam o ambiente para cada momento da conferência, guiando a experiência com paixão e excelência.",
+      image: "/images/conference/lineup/legacy.jpg",
     },
   ];
 
@@ -60,22 +61,21 @@ const FinalConference = () => {
       valor: "",
       isActive: true,
       image: "/images/conference/tickets/lote1-esgotado.png",
-      
     },
     {
       status: "Comprar",
       titulo: "Lote 2",
       valor: "",
       isActive: true,
-      image: "/images/conference/tickets/lote2.png",
-      url: REDIRECT_URL,
+      image: "/images/conference/tickets/lote2-esgotado.png",
     },
     {
       status: "Comprar",
       titulo: "Lote 3",
       valor: "",
-      isActive: false,
+      isActive: true,
       image: "/images/conference/tickets/lote3.png",
+      url: REDIRECT_URL,
     },
   ];
 
@@ -209,9 +209,9 @@ const FinalConference = () => {
             <h2> INGRESSOS </h2>
             <p>
               <i>
-                Você ainda não sabe tudo... Mas pode garantir que estará lá
-                quando acontecer. Adquira seu ingresso e esteja pronto para o
-                que será revelado.
+                A cada dia revelamos mais do que Deus tem preparado para a
+                Legacy Conference 2025. Garanta já o seu ingresso e viva tudo o
+                que Ele vai fazer nesses dias.
               </i>
             </p>
           </div>
