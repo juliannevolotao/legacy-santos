@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 // import Plyr from "react-plyr";
-import Plyr from "plyr-react";
-import "plyr-react/plyr.css";
+// import Plyr from "plyr-react";
+// import "plyr-react/plyr.css";
 const Camp = () => {
   return (
     <div
