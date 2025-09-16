@@ -5,26 +5,23 @@ import {
   Instagram,
   ArrowUpRight,
   Info,
-  Ticket,
-  Youtube
+  TicketCheck,
+  Youtube,
+  Tent
 } from "lucide-react";
 
 const Home = () => {
   return (
     <div className={styles.home}>
-      <img src="/images/logo-branco.png" alt="Logo Legacy" className={styles.logo} />
+      <img
+        src="/images/logo-branco.png"
+        alt="Logo Legacy"
+        className={styles.logo}
+      />
       <section className={styles.container}>
         <div className={styles.contactSection}>
           <h3> Nos acompanhe </h3>
           <ul className={styles.socialMediaList}>
-            <li className={styles.socialMediaListItem + " " + styles.highlight}>
-              <a href="/conference" rel="noopener noreferrer">
-                <Ticket className={styles.icon} />
-                <h2>Legacy Conference 25</h2>
-                <span> 12 & 13 de setembro </span>
-                <ArrowUpRight className={styles.rightIcon} />
-              </a>
-            </li>
             <li className={styles.socialMediaListItem}>
               <a
                 href="https://www.instagram.com/legacylagoinhasantos"
@@ -35,6 +32,24 @@ const Home = () => {
                 <h2>Instagram Legacy</h2>
                 <span> @legacylagoinhasantos </span>
                 <ArrowUpRight className={styles.rightIcon} />
+              </a>
+            </li>
+
+            <li className={styles.socialMediaListItem + " "}>
+              <a href="/conference" rel="noopener noreferrer">
+                <TicketCheck className={styles.icon} />
+                <h2>Legacy Conference 2025</h2>
+                <span> 12 & 13 de setembro </span>
+                <ArrowUpRight className={styles.rightIcon} />
+              </a>
+            </li>
+
+            <li className={styles.socialMediaListItem + " "}>
+              <a href="/camp" rel="noopener noreferrer">
+                <Tent className={styles.icon} />
+                <h2>Legacy Camp 2026</h2>
+                <span> Em breve... </span>
+                {/* <ArrowUpRight className={styles.rightIcon} /> */}
               </a>
             </li>
           </ul>
@@ -61,7 +76,7 @@ const Home = () => {
                 rel="noopener noreferrer"
               >
                 <MessageSquare className={styles.icon} />
-                <h2>Legacy Bloom </h2>
+                <h2>Legacy Shine </h2>
                 <span> Grupo de mulheres do Legacy </span>
                 <ArrowUpRight className={styles.rightIcon} />
               </a>
@@ -73,7 +88,7 @@ const Home = () => {
                 rel="noopener noreferrer"
               >
                 <MessageSquare className={styles.icon} />
-                <h2>Legacy Brave </h2>
+                <h2>Legacy Hero </h2>
                 <span> Grupo de homens do Legacy </span>
                 <ArrowUpRight className={styles.rightIcon} />
               </a>
@@ -112,7 +127,6 @@ const Home = () => {
         <div className={styles.contactSection}>
           <h3> Informativo </h3>
           <ul className={styles.socialMediaList}>
-            
             <li className={styles.socialMediaListItem}>
               <a
                 href="https://sandwiche.me/legacylagoinhasantos"
@@ -125,7 +139,7 @@ const Home = () => {
                 <ArrowUpRight className={styles.rightIcon} />
               </a>
             </li>
-             <li className={styles.socialMediaListItem}>
+            <li className={styles.socialMediaListItem}>
               <a
                 href="https://www.instagram.com/lagoinhasantos"
                 target="_blank"
@@ -137,7 +151,7 @@ const Home = () => {
                 <ArrowUpRight className={styles.rightIcon} />
               </a>
             </li>
-             <li className={styles.socialMediaListItem}>
+            <li className={styles.socialMediaListItem}>
               <a
                 href="https://www.youtube.com/@lagoinhasantos"
                 target="_blank"

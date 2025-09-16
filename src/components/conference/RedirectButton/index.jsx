@@ -7,8 +7,9 @@ const RedirectButton = ({ redirectUrl }) => {
       className={styles.buyButton}
       target="_blank"
       rel="noopener noreferrer"
+      disabled
     >
-      <span className={styles.buttonText}>Quero meu ingresso</span>
+      <span className={styles.buttonText}>Ver os melhores momentos</span>
       <span className={styles.arrowContainer}>
         <svg
           width="66px"

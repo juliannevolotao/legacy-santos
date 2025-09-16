@@ -41,8 +41,8 @@ const Timeline = () => {
         <p className={styles.text}>3° lote</p>
       </div>
 
-      <div className={styles.step}>
-        <p className={styles.date}>12/09</p>
+      <div className={`${styles.step} ${styles.done}`}>
+        <p className={styles.date}>12/09 e 13/09</p>
         <div className={styles.dot}></div>
         <p className={styles.text}>Legacy Conference 25</p>
       </div>

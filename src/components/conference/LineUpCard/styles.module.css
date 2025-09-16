@@ -24,6 +24,10 @@
   /* animation: glow 3s ease-in-out infinite; */
 }
 
+.cardContainer:last-of-type {
+  margin-right: 60px;
+}
+
 .cardContainer:hover {
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.092);
 }
@@ -83,6 +87,10 @@
     max-width: 320px;
     flex-shrink: 1;
     scroll-snap-align: unset;
+  }
+
+  .cardContainer:last-of-type {
+    margin-right: 0;
   }
 }
 @media (min-width: 1024px) {

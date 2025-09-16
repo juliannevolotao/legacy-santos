@@ -9,7 +9,7 @@ import FAQ from "../../components/conference/Faq";
 import { Instagram, AppWindow } from "lucide-react";
 
 const FinalConference = () => {
-  const REDIRECT_URL = "https://articket.com.br/e/4095/legacy-conf";
+  const REDIRECT_URL = "https://www.instagram.com/legacylagoinhasantos/";
 
   const LINEUP = [
     {
@@ -32,17 +32,20 @@ const FinalConference = () => {
     },
     {
       name: "Cultura do Céu",
-      description: "O Ministério Cultura do Céu foi Criado pelo cantor Davi Fernandes e seus filhos Kaleb e Josh, o Ministério Cultura do Céu nasceu com o propósito de conduzir pessoas a um encontro com Deus por meio da música.",
+      description:
+        "O Ministério Cultura do Céu foi Criado pelo cantor Davi Fernandes e seus filhos Kaleb e Josh, o Ministério Cultura do Céu nasceu com o propósito de conduzir pessoas a um encontro com Deus por meio da música.",
       image: "/images/conference/lineup/cultura.jpg",
     },
     {
       name: "Pr. Daniel Santana",
-      description: "Daniel Santana é pastor na Igreja Lagoinha Santos, onde exerce seu ministério com dedicação e paixão. Casado com Renata, pai de Davi, Elisa e Helena. É graduado no seminário Teológico Carisma, onde aprofundou seus estudos sobre a Palavra de Deus.",
+      description:
+        "Daniel Santana é pastor na Igreja Lagoinha Santos, onde exerce seu ministério com dedicação e paixão. Casado com Renata, pai de Davi, Elisa e Helena. É graduado no seminário Teológico Carisma, onde aprofundou seus estudos sobre a Palavra de Deus.",
       image: "/images/conference/lineup/daniel.jpg",
     },
     {
       name: "Legacy Crew",
-      description: "A Legacy Crew é formada pelos líderes e músicos que conduzem nossa jornada com energia, propósito e adoração. Eles preparam o ambiente para cada momento da conferência, guiando a experiência com paixão e excelência.",
+      description:
+        "A Legacy Crew é formada pelos líderes e músicos que conduzem nossa jornada com energia, propósito e adoração. Eles preparam o ambiente para cada momento da conferência, guiando a experiência com paixão e excelência.",
       image: "/images/conference/lineup/legacy.jpg",
     },
   ];
@@ -74,8 +77,7 @@ const FinalConference = () => {
       titulo: "Lote 3",
       valor: "",
       isActive: true,
-      image: "/images/conference/tickets/lote3.png",
-      url: REDIRECT_URL,
+      image: "/images/conference/tickets/lote3-esgotado.png",
     },
   ];
 
@@ -91,10 +93,28 @@ const FinalConference = () => {
               alt="Legacy Conference"
               className={finalStyles.logo}
             />
-            <p>
-              Nos dias <strong>12 e 13 de setembro</strong>, viva ministrações
-              intensas, adoração profunda e experiências sobrenaturais. Um
-              ambiente onde o céu invade a terra e corações são transformados.
+            <p style={{ marginBottom: 30 }}>
+              {/* Nos dias <strong>12 e 13 de setembro</strong>, vivemos
+              ministrações intensas, adoração profunda e experiências
+              sobrenaturais. Um ambiente onde o céu invade a terra e corações
+              são transformados.  */}
+              Nos dias 12 e 13 de setembro, a{" "}
+              <strong>Legacy Conference 2025</strong> reuniu centenas de jovens
+              e famílias para dois dias inesquecíveis. Foram ministrações
+              intensas, adoração profunda e experiências sobrenaturais que
+              marcaram cada coração presente.
+              <br />
+              <br />
+              Vivemos um ambiente onde o céu verdadeiramente invadiu a terra: a
+              cada palavra, canção e oração, a presença de Deus foi real e
+              transformadora. Pessoas foram curadas, renovadas e despertadas
+              para viver o propósito eterno.
+              <br />
+              <br />A Legacy Conference não foi apenas um evento, mas um{" "}
+              <strong>mover de Deus</strong> que uniu gerações em um só clamor.
+              O que experimentamos nesses dias ecoará em nossa caminhada,
+              inspirando-nos a continuar levando a luz do evangelho e a presença
+              de Jesus por onde formos.
             </p>
 
             <RedirectButton redirectUrl={REDIRECT_URL} />
@@ -103,37 +123,37 @@ const FinalConference = () => {
 
         <div className={`${styles.caroussel} ${finalStyles.caroussel}`}>
           <div className={`${styles.track} ${finalStyles.track}`}>
-            <span>ESTÁ CHEGANDO O DIA!!</span>
+            <span>LEGACY CONFERENCE 2025</span>
             <span> - </span>
-            <span>FAÇA SUA INSCRIÇÃO</span>
+            <span>LEGACY CONFERENCE 2025</span>
             <span> - </span>
-            <span>ESTÁ CHEGANDO O DIA!!</span>
+            <span>LEGACY CONFERENCE 2025</span>
             <span> - </span>
-            <span>FAÇA SUA INSCRIÇÃO</span>
+            <span>LEGACY CONFERENCE 2025</span>
             <span> - </span>
-            <span>ESTÁ CHEGANDO O DIA!!</span>
+            <span>LEGACY CONFERENCE 2025</span>
             <span> - </span>
-            <span>FAÇA SUA INSCRIÇÃO</span>
+            <span>LEGACY CONFERENCE 2025</span>
             <span> - </span>
-            <span>ESTÁ CHEGANDO O DIA!!</span>
+            <span>LEGACY CONFERENCE 2025</span>
             <span> - </span>
-            <span>FAÇA SUA INSCRIÇÃO</span>
+            <span>LEGACY CONFERENCE 2025</span>
             <span> - </span>
-            <span>ESTÁ CHEGANDO O DIA!!</span>
+            <span>LEGACY CONFERENCE 2025</span>
             <span> - </span>
-            <span>FAÇA SUA INSCRIÇÃO</span>
+            <span>LEGACY CONFERENCE 2025</span>
             <span> - </span>
-            <span>ESTÁ CHEGANDO O DIA!!</span>
+            <span>LEGACY CONFERENCE 2025</span>
             <span> - </span>
-            <span>FAÇA SUA INSCRIÇÃO</span>
+            <span>LEGACY CONFERENCE 2025</span>
             <span> - </span>
-            <span>ESTÁ CHEGANDO O DIA!!</span>
+            <span>LEGACY CONFERENCE 2025</span>
             <span> - </span>
-            <span>FAÇA SUA INSCRIÇÃO</span>
+            <span>LEGACY CONFERENCE 2025</span>
             <span> - </span>
-            <span>ESTÁ CHEGANDO O DIA!!</span>
+            <span>LEGACY CONFERENCE 2025</span>
             <span> - </span>
-            <span>FAÇA SUA INSCRIÇÃO</span>
+            <span>LEGACY CONFERENCE 2025</span>
             <span> - </span>
           </div>
         </div>
@@ -146,7 +166,7 @@ const FinalConference = () => {
             <h2>Quando o Céu Invade a Terra</h2>
 
             <p>
-              <strong>Quando o céu invade a terra</strong> não é apenas um tema
+              {/* <strong>Quando o céu invade a terra</strong> não é apenas um tema
               — é um clamor. Representa o momento em que a atmosfera do céu
               desce sobre nós, transformando ambientes, vidas e realidades. É
               sobre <strong>viver o sobrenatural de Deus </strong> aqui e agora,
@@ -157,7 +177,18 @@ const FinalConference = () => {
               por meio de adoração sincera, palavras proféticas e corações
               rendidos. Será um tempo onde a vontade de Deus será feita na terra
               como no céu, e uma geração será marcada para viver o propósito
-              eterno.
+              eterno. */}
+              <strong>Quando o céu invade a terra</strong> não foi apenas um
+              tema — foi uma realidade que experimentamos. A atmosfera do céu
+              desceu sobre nós, transformando ambientes, vidas e corações.
+              Vivemos o sobrenatural de Deus de forma palpável, intensa e
+              transformadora.
+              <br />
+              <br />
+              Na <strong>Legacy Conference 2025</strong> vimos adoração sincera,
+              palavras proféticas e corações rendidos. Foi um tempo em que a
+              vontade de Deus se manifestou na terra como no céu, marcando uma
+              geração para viver o Seu propósito eterno.
             </p>
           </div>
           <div
@@ -175,8 +206,9 @@ const FinalConference = () => {
             <h2> Rumo à Legacy Conference </h2>
             <p>
               <i>
-                Acompanhe os marcos que nos preparam para viver algo
-                extraordinário na Legacy Conference.
+                A jornada até a Legacy Conference 2025 foi marcada por oração,
+                expectativa e fé. Cada preparação foi um passo rumo a algo
+                extraordinário que Deus já havia separado para nós.
               </i>
             </p>
           </div>
@@ -215,9 +247,11 @@ const FinalConference = () => {
             <h2> INGRESSOS </h2>
             <p>
               <i>
-                A cada dia revelamos mais do que Deus tem preparado para a
-                Legacy Conference 2025. Garanta já o seu ingresso e viva tudo o
-                que Ele vai fazer nesses dias.
+                A Legacy Conference 2025 já aconteceu e foi um tempo
+                inesquecível na presença de Deus. Somos gratos a todos que
+                participaram e viveram esses dias conosco. Enquanto isso,
+                acompanhe nossas redes sociais para rever os melhores momentos e
+                ficar por dentro do que vem pela frente.
               </i>
             </p>
           </div>
@@ -251,9 +285,9 @@ const FinalConference = () => {
           </li>
           <li>
             <a
-              href="https://www.legacysantos.com.br"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="/"
+              // target="_blank"
+              // rel="noopener noreferrer"
             >
               <AppWindow className={finalStyles.footerIcon} />
             </a>

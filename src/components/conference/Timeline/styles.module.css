@@ -5,7 +5,7 @@
   align-items: flex-start;
   width: 100%;
   max-width: 1200px;
-  margin: 70px auto 0;
+  margin: 70px auto 0px;
   /* padding: 0 20px; */
 }
 
@@ -26,7 +26,7 @@
   position: absolute;
   height: 100%;
   background-color: #d1fc5e;
-  width: 90%; /* Progresso (ajuste manual) */
+  width: 100%; /* Progresso (ajuste manual) */
   z-index: 1;
   border-radius: 10px;
   transition: width 0.8s ease-in-out;
@@ -78,6 +78,7 @@
     flex-direction: column;
     align-items: center;
     gap: 30px;
+    margin: 45px auto 30px;
 
     max-width: 205px;
   }
@@ -96,7 +97,7 @@
 
   .line::before {
     width: 100%;
-    height: 90%; /* Progresso na vertical */
+    height: 100%; /* Progresso na vertical */
   }
 
   .step {
