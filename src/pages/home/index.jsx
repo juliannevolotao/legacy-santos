@@ -8,7 +8,7 @@ import {
   TicketCheck,
   Youtube,
   Tent,
-  NotepadText
+  NotepadText,
 } from "lucide-react";
 
 const Home = () => {
@@ -30,8 +30,27 @@ const Home = () => {
                 rel="noopener noreferrer"
               >
                 <NotepadText className={styles.icon} />
-                <h2>Legacy Shine 27/09 <small>às 14h</small></h2>
-                <span> Confirme sua presença no formulário </span>
+                <h2>
+                  Legacy Shine 27/09 <small>às 14h</small>
+                </h2>
+                <span> Confirme sua presença </span>
+                <ArrowUpRight className={styles.rightIcon} />
+              </a>
+            </li>
+
+            <li
+              className={
+                styles.socialMediaListItem + " " + styles.greenHighlight
+              }
+            >
+              <a
+                href="https://wa.me/5511975217202"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Info className={styles.icon} />
+                <h2>Missão Segipe </h2>
+                <span> Contribuições | Informações </span>
                 <ArrowUpRight className={styles.rightIcon} />
               </a>
             </li>

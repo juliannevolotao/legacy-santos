@@ -97,6 +97,19 @@
     font-weight: bold;
   }
 }
+.greenHighlight {
+  background-color: #495b29;
+  border: 1px solid transparent;
+
+  a,
+  h2,
+  p,
+  span,
+  svg {
+    color: #eeeff3;
+    font-weight: bold;
+  }
+}
 
 .disclaimer {
   color: rgb(102, 102, 102);
