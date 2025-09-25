@@ -49,7 +49,7 @@ const Home = () => {
                 rel="noopener noreferrer"
               >
                 <Info className={styles.icon} />
-                <h2>Missão Segipe </h2>
+                <h2>Missão Sergipe </h2>
                 <span> Contribuições | Informações </span>
                 <ArrowUpRight className={styles.rightIcon} />
               </a>
