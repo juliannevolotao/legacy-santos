@@ -7,7 +7,8 @@ import {
   Info,
   TicketCheck,
   Youtube,
-  Tent
+  Tent,
+  NotepadText
 } from "lucide-react";
 
 const Home = () => {
@@ -22,6 +23,19 @@ const Home = () => {
         <div className={styles.contactSection}>
           <h3> Nos acompanhe </h3>
           <ul className={styles.socialMediaList}>
+            <li className={styles.socialMediaListItem + " " + styles.highlight}>
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSckiV3-2FcKjH2NqYBqySKbbDKGC3hrSsxe43ZRdvTKBJhYOw/viewform"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <NotepadText className={styles.icon} />
+                <h2>Legacy Shine 27/09 <small>às 14h</small></h2>
+                <span> Confirme sua presença no formulário </span>
+                <ArrowUpRight className={styles.rightIcon} />
+              </a>
+            </li>
+
             <li className={styles.socialMediaListItem}>
               <a
                 href="https://www.instagram.com/legacylagoinhasantos"
@@ -69,7 +83,7 @@ const Home = () => {
                 <ArrowUpRight className={styles.rightIcon} />
               </a>
             </li>
-            <li className={styles.socialMediaListItem}>
+            <li className={styles.socialMediaListItem + " " + styles.highlight}>
               <a
                 href="https://chat.whatsapp.com/IvzgRcphUsZBNwsl49N6GT"
                 target="_blank"

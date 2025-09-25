@@ -85,7 +85,7 @@
 }
 
 .highlight {
-  background-color: #d1fc5e;
+  background-color: #ff0092;
   border: 1px solid transparent;
 
   a,
@@ -93,7 +93,7 @@
   p,
   span,
   svg {
-    color: #253add;
+    color: #eeeff3;
     font-weight: bold;
   }
 }
