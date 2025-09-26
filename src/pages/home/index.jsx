@@ -21,23 +21,8 @@ const Home = () => {
       />
       <section className={styles.container}>
         <div className={styles.contactSection}>
-          <h3> Nos acompanhe </h3>
+          <h3> Destaques </h3>
           <ul className={styles.socialMediaList}>
-            <li className={styles.socialMediaListItem + " " + styles.highlight}>
-              <a
-                href="https://docs.google.com/forms/d/e/1FAIpQLSckiV3-2FcKjH2NqYBqySKbbDKGC3hrSsxe43ZRdvTKBJhYOw/viewform"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <NotepadText className={styles.icon} />
-                <h2>
-                  Legacy Shine 27/09 <small>às 14h</small>
-                </h2>
-                <span> Confirme sua presença </span>
-                <ArrowUpRight className={styles.rightIcon} />
-              </a>
-            </li>
-
             <li
               className={
                 styles.socialMediaListItem + " " + styles.greenHighlight
@@ -55,6 +40,42 @@ const Home = () => {
               </a>
             </li>
 
+            <li className={styles.socialMediaListItem + " " + styles.highlight}>
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSckiV3-2FcKjH2NqYBqySKbbDKGC3hrSsxe43ZRdvTKBJhYOw/viewform"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <NotepadText className={styles.icon} />
+                <h2>
+                  Legacy Shine 27/09 <small>às 14h</small>
+                </h2>
+                <span> Confirme sua presença </span>
+                <ArrowUpRight className={styles.rightIcon} />
+              </a>
+            </li>
+
+            <li className={styles.socialMediaListItem + " " + styles.heroHighlight}>
+              <a
+                href="https://chat.whatsapp.com/LfqLpHnNDXV7zSjW4xWO22"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <NotepadText className={styles.icon} />
+                <h2>
+                  Legacy Hero 27/09 <small>às 13:30h</small>
+                </h2>
+                <span> Confirme sua presença </span>
+                <ArrowUpRight className={styles.rightIcon} />
+              </a>
+            </li>
+
+          </ul>
+        </div>
+        <div className={styles.contactSection}>
+          <h3> Nos acompanhe </h3>
+          <ul className={styles.socialMediaList}>
+  
             <li className={styles.socialMediaListItem}>
               <a
                 href="https://www.instagram.com/legacylagoinhasantos"
@@ -82,7 +103,7 @@ const Home = () => {
                 <Tent className={styles.icon} />
                 <h2>Legacy Camp 2026</h2>
                 <span> Em breve... </span>
-                {/* <ArrowUpRight className={styles.rightIcon} /> */}
+                <ArrowUpRight className={styles.rightIcon} />
               </a>
             </li>
           </ul>
