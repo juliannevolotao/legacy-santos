@@ -114,7 +114,7 @@ const Home = () => {
                 <ArrowUpRight className={styles.rightIcon} />
               </a>
             </li>
-            <li className={styles.socialMediaListItem}>
+            <li className={styles.socialMediaListItem + " " + styles.heroHighlight}>
               <a
                 href="https://chat.whatsapp.com/LfqLpHnNDXV7zSjW4xWO22"
                 target="_blank"
