@@ -35,39 +35,25 @@ const Home = () => {
               >
                 <Info className={styles.icon} />
                 <h2>Missão Sergipe </h2>
-                <span> Contribuições | Informações </span>
+                <span> Dúvidas | Informações </span>
                 <ArrowUpRight className={styles.rightIcon} />
               </a>
             </li>
-
-            <li className={styles.socialMediaListItem + " " + styles.highlight}>
-              <a
-                href="https://docs.google.com/forms/d/e/1FAIpQLSckiV3-2FcKjH2NqYBqySKbbDKGC3hrSsxe43ZRdvTKBJhYOw/viewform"
-                target="_blank"
-                rel="noopener noreferrer"
+            <li
+              className={
+                styles.socialMediaListItem + " " + styles.greenHighlight
+              }
+            >
+              <div
+                href="#"
+                
               >
-                <NotepadText className={styles.icon} />
-                <h2>
-                  Legacy Shine 27/09 <small>às 14h</small>
-                </h2>
-                <span> Confirme sua presença </span>
-                <ArrowUpRight className={styles.rightIcon} />
-              </a>
-            </li>
-
-            <li className={styles.socialMediaListItem + " " + styles.heroHighlight}>
-              <a
-                href="https://chat.whatsapp.com/LfqLpHnNDXV7zSjW4xWO22"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <NotepadText className={styles.icon} />
-                <h2>
-                  Legacy Hero 27/09 <small>às 13:30h</small>
-                </h2>
-                <span> Confirme sua presença </span>
-                <ArrowUpRight className={styles.rightIcon} />
-              </a>
+              
+                {/* <Info className={styles.icon} /> */}
+                <h2 style={{fontSize: 12}}>Chave pix para contribuição | Missão Sergipe </h2>
+                <span style={{textTransform: "uppercase", marginTop: 3, fontSize: 12}}> sejaextraordinariomissoes@gmail.com </span>
+                {/* <ArrowUpRight className={styles.rightIcon} /> */}
+                </div>
             </li>
 
           </ul>
@@ -123,7 +109,7 @@ const Home = () => {
                 <ArrowUpRight className={styles.rightIcon} />
               </a>
             </li>
-            <li className={styles.socialMediaListItem + " " + styles.highlight}>
+            <li className={styles.socialMediaListItem}>
               <a
                 href="https://chat.whatsapp.com/IvzgRcphUsZBNwsl49N6GT"
                 target="_blank"
@@ -135,7 +121,7 @@ const Home = () => {
                 <ArrowUpRight className={styles.rightIcon} />
               </a>
             </li>
-            <li className={styles.socialMediaListItem + " " + styles.heroHighlight}>
+            <li className={styles.socialMediaListItem }>
               <a
                 href="https://chat.whatsapp.com/LfqLpHnNDXV7zSjW4xWO22"
                 target="_blank"
