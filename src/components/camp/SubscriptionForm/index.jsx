@@ -72,7 +72,7 @@ const SubscriptionForm = () => {
     }
 
     const url =
-      "https://cors-anywhere.herokuapp.com/https://script.google.com/macros/s/AKfycbxxS--KklRbY8vS5YwBypZOfxcei_r10KllaZddizSmnjzIJEseRMMVg0T-4lc4k9u-kA/exec";
+      "https://script.google.com/macros/s/AKfycbxxS--KklRbY8vS5YwBypZOfxcei_r10KllaZddizSmnjzIJEseRMMVg0T-4lc4k9u-kA/exec";
 
     try {
       const res = await fetch(url, {

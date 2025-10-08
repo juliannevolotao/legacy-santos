@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import SubscriptionForm from "../../components/camp/SubscriptionForm/Index";
+import SubscriptionForm from "../../components/camp/SubscriptionForm/index.jsx";
 // import Plyr from "react-plyr";
 // import Plyr from "plyr-react";
 // import "plyr-react/plyr.css";
