@@ -125,11 +125,16 @@
 }
 
 .disclaimer {
-  color: rgb(102, 102, 102);
-  font-size: 12px;
+  color: rgb(119, 119, 119);
+  font-size: 9px;
   text-align: center;
   margin-top: 50px;
   margin-bottom: 30px;
+
+  a {
+    color: rgb(119, 119, 119);
+    text-decoration: none;
+  }
 }
 
 .icon {
@@ -144,4 +149,36 @@
   right: 25px;
   width: 20px;
   color: rgb(121, 121, 121);
+}
+
+/* ----------------- */
+
+.aboutLegacy {
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto 20px;
+  padding: 20px 40px;
+  background-color: rgba(51, 51, 51, 0.575);
+  border-radius: 12px;
+  text-align: center;
+}
+
+.aboutLegacy h2 {
+  color: #e2e2e2;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.aboutLegacy p {
+  color: #a5a5a5;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .aboutLegacy {
+    padding: 20px;
+    width: 90%;
+    box-sizing: border-box;
+  }
 }

@@ -9,7 +9,9 @@ import {
   Youtube,
   Tent,
   NotepadText,
+  MapIcon,
 } from "lucide-react";
+import Breadcrumb from "../../components/breadcrumb";
 
 const Home = () => {
   return (
@@ -19,6 +21,20 @@ const Home = () => {
         alt="Logo Legacy"
         className={styles.logo}
       />
+
+      <Breadcrumb items={[{ label: "Home", link: "/" }]} />
+
+      <section className={styles.aboutLegacy}>
+        <h2>Legacy Santos</h2>
+        <p>
+          O <strong>Legacy Santos</strong> é um espaço de fé, comunhão e
+          crescimento espiritual. Aqui você encontra encontros, atividades e
+          grupos que edificam a vida, fortalecem relacionamentos e aproximam
+          pessoas de Deus. Venha fazer parte da nossa comunidade e viver
+          experiências transformadoras!
+        </p>
+      </section>
+
       <section className={styles.container}>
         <div className={styles.contactSection}>
           <h3> Destaques </h3>
@@ -44,24 +60,37 @@ const Home = () => {
                 styles.socialMediaListItem + " " + styles.greenHighlight
               }
             >
-              <div
-                href="#"
-                
-              >
-              
+              <div href="#">
                 {/* <Info className={styles.icon} /> */}
-                <h2 style={{fontSize: 12}}>Chave pix para contribuição | Missão Sergipe </h2>
-                <span style={{textTransform: "uppercase", marginTop: 3, fontSize: 12}}> sejaextraordinariomissoes@gmail.com </span>
+                <h2 style={{ fontSize: 12 }}>
+                  Chave pix para contribuição | Missão Sergipe{" "}
+                </h2>
+                <span
+                  style={{
+                    textTransform: "uppercase",
+                    marginTop: 3,
+                    fontSize: 12,
+                  }}
+                >
+                  {" "}
+                  sejaextraordinariomissoes@gmail.com{" "}
+                </span>
                 {/* <ArrowUpRight className={styles.rightIcon} /> */}
-                </div>
+              </div>
             </li>
-
+            <li className={styles.socialMediaListItem}>
+              <a href="/gcs">
+                <MapIcon className={styles.icon} />
+                <h2> GCs Legacy </h2>
+                <span> Encontre o GC mais perto de você </span>
+                <ArrowUpRight className={styles.rightIcon} />
+              </a>
+            </li>
           </ul>
         </div>
         <div className={styles.contactSection}>
           <h3> Nos acompanhe </h3>
           <ul className={styles.socialMediaList}>
-  
             <li className={styles.socialMediaListItem}>
               <a
                 href="https://www.instagram.com/legacylagoinhasantos"
@@ -121,7 +150,7 @@ const Home = () => {
                 <ArrowUpRight className={styles.rightIcon} />
               </a>
             </li>
-            <li className={styles.socialMediaListItem }>
+            <li className={styles.socialMediaListItem}>
               <a
                 href="https://chat.whatsapp.com/LfqLpHnNDXV7zSjW4xWO22"
                 target="_blank"
@@ -206,7 +235,17 @@ const Home = () => {
           </ul>
         </div>
       </section>
-      <span className={styles.disclaimer}>Site em desenvolvimento.</span>
+      <span className={styles.disclaimer}>
+        Site em desenvolvimento por{" "}
+        <a
+          href="https://www.linkedin.com/in/juliannevolotao/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Julianne Volotão
+        </a>
+        .
+      </span>
     </div>
   );
 };

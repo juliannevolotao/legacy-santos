@@ -1,0 +1,92 @@
+.gcsPage {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  background-color: #0e0e0e;
+  padding-bottom: 60px;
+}
+
+.logo {
+  width: 60px;
+  height: auto;
+  margin: 40px 0 20px;
+}
+
+.intro {
+  max-width: 800px;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.intro h1 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.intro p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #d1d1d1;
+  margin-bottom: 15px;
+}
+
+.contactButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 20px;
+  padding: 10px 20px;
+  border-radius: 90px;
+  /* background-color: #495b29; */
+  border: 1px solid white;
+  color: white;
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+.contactButton:hover {
+  background-color: white;
+  color: black;
+}
+
+.mapSection {
+  margin-top: 50px;
+  width: 100%;
+  max-width: 1000px;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.mapSection h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #dcdcdc;
+}
+
+.mapContainer {
+  width: 100%;
+  height: 500px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 768px) {
+  .intro h1 {
+    font-size: 22px;
+  }
+  .mapContainer {
+    height: 400px;
+  }
+}
