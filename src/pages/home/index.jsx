@@ -39,45 +39,6 @@ const Home = () => {
         <div className={styles.contactSection}>
           <h3> Destaques </h3>
           <ul className={styles.socialMediaList}>
-            <li
-              className={
-                styles.socialMediaListItem + " " + styles.greenHighlight
-              }
-            >
-              <a
-                href="https://wa.me/5511975217202"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Info className={styles.icon} />
-                <h2>Missão Sergipe </h2>
-                <span> Dúvidas | Informações </span>
-                <ArrowUpRight className={styles.rightIcon} />
-              </a>
-            </li>
-            <li
-              className={
-                styles.socialMediaListItem + " " + styles.greenHighlight
-              }
-            >
-              <div href="#">
-                {/* <Info className={styles.icon} /> */}
-                <h2 style={{ fontSize: 12 }}>
-                  Chave pix para contribuição | Missão Sergipe{" "}
-                </h2>
-                <span
-                  style={{
-                    textTransform: "uppercase",
-                    marginTop: 3,
-                    fontSize: 12,
-                  }}
-                >
-                  {" "}
-                  sejaextraordinariomissoes@gmail.com{" "}
-                </span>
-                {/* <ArrowUpRight className={styles.rightIcon} /> */}
-              </div>
-            </li>
             <li className={styles.socialMediaListItem}>
               <a href="/gcs">
                 <MapIcon className={styles.icon} />
@@ -108,7 +69,7 @@ const Home = () => {
               <a href="/conference" rel="noopener noreferrer">
                 <TicketCheck className={styles.icon} />
                 <h2>Legacy Conference 2025</h2>
-                <span> 12 & 13 de setembro </span>
+                <span> Recap | 12 & 13 de setembro </span>
                 <ArrowUpRight className={styles.rightIcon} />
               </a>
             </li>
