@@ -25,7 +25,7 @@ const Home = () => {
       <Breadcrumb items={[{ label: "Home", link: "/" }]} />
 
       <section className={styles.aboutLegacy}>
-        <h2>Legacy Santos</h2>
+        <h2 className="text-2xl">Legacy Santos</h2>
         <p>
           O <strong>Legacy Santos</strong> é um espaço de fé, comunhão e
           crescimento espiritual. Aqui você encontra encontros, atividades e
@@ -47,6 +47,15 @@ const Home = () => {
                 <ArrowUpRight className={styles.rightIcon} />
               </a>
             </li>
+            <li className={`${styles.socialMediaListItem} ${styles.highlight}`}>
+              <a href="/camp" rel="noopener noreferrer">
+                <Tent className={styles.icon} />
+                <h2>Legacy Camp 2026</h2>
+                <span> 13 a 15 de março | Faça sua inscrição </span>
+                <ArrowUpRight className={styles.rightIcon} />
+              </a>
+            </li>
+
           </ul>
         </div>
         <div className={styles.contactSection}>
@@ -66,6 +75,15 @@ const Home = () => {
             </li>
 
             <li className={styles.socialMediaListItem + " "}>
+              <a href="/camp" rel="noopener noreferrer">
+                <Tent className={styles.icon} />
+                <h2>Legacy Camp 2026</h2>
+                <span> 13 a 15 de março </span>
+                <ArrowUpRight className={styles.rightIcon} />
+              </a>
+            </li>
+
+            <li className={styles.socialMediaListItem + " "}>
               <a href="/conference" rel="noopener noreferrer">
                 <TicketCheck className={styles.icon} />
                 <h2>Legacy Conference 2025</h2>
@@ -74,14 +92,7 @@ const Home = () => {
               </a>
             </li>
 
-            <li className={styles.socialMediaListItem + " "}>
-              <a href="/camp" rel="noopener noreferrer">
-                <Tent className={styles.icon} />
-                <h2>Legacy Camp 2026</h2>
-                <span> Em breve... </span>
-                <ArrowUpRight className={styles.rightIcon} />
-              </a>
-            </li>
+            
           </ul>
         </div>
         <div className={styles.contactSection}>

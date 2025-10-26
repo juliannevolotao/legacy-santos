@@ -24,6 +24,16 @@
   flex-wrap: wrap;
 }
 
+.container h3 {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.container h2 {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
@@ -85,7 +95,7 @@
 }
 
 .highlight {
-  background-color: #ff0092;
+  background-color: #b73426;
   border: 1px solid transparent;
 
   a,
