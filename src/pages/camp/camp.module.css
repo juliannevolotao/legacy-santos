@@ -1,0 +1,20 @@
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.mainLogo {
+  /* width: min(90vw, 400px);
+  aspect-ratio: 800 / 572;
+  background: url("/images/conference/logo2.png");
+  background-size: cover;
+  background-position: center; */
+  animation: float 2s ease-in-out infinite;
+}
