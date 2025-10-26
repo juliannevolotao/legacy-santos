@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-import { X, MapPin, Calendar, Users, Bus } from "lucide-react";
+import { X, MapPin, Calendar, Users, Bus, ArrowUpRight } from "lucide-react";
 import campStyles from "./camp.module.css";
 
 const Camp = () => {
@@ -343,8 +343,8 @@ const Camp = () => {
       </section>
 
       {/* Modal com form */}
-      <dialog ref={dialogRef} className="modal" onClick={handleBackdropClick}>
-        <div className="modal-box relative max-w-4xl bg-[#ebe3d1] rounded-2xl shadow-xl border ">
+      <dialog ref={dialogRef} className="modal " onClick={handleBackdropClick}>
+        <div className="modal-box relative max-w-4xl max-h-10/12 top-5 bg-[#ebe3d1] rounded-2xl shadow-xl border ">
           <button
             className="absolute cursor-pointer right-4 top-4   transition"
             onClick={closeModal}
@@ -355,11 +355,25 @@ const Camp = () => {
           <h3 className="font-bold text-2xl text-[#69351a] mb-2 text-center">
             🏕️ Formulário de Inscrição
           </h3>
-          <p className="text-center  mb-10 text-[#69351a]">
+          <p className="text-center mb-4 text-[#69351a]">
             Preencha o formulário abaixo para garantir sua vaga no acampamento!
           </p>
 
-          <div className="rounded-xl overflow-hidden border shadow-inner bg-[#ece7d9]">
+          <div className="flex items-center justify-center w-full">
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLScVGa4q5C87885QAwt1MA9czYLz0Y8djKsQaPlQ1LuWN7234Q/viewform"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-center "
+            >
+              <span className=" text-center flex gap-2 py-2 px-2 border-b text-[#b73426]">
+                Abrir link externo
+              <ArrowUpRight className="" />
+              </span>
+            </a>
+          </div>
+
+          <div className="rounded-xl mt-10 overflow-hidden border shadow-inner bg-[#ece7d9]">
             <iframe
               src="https://docs.google.com/forms/d/e/1FAIpQLScVGa4q5C87885QAwt1MA9czYLz0Y8djKsQaPlQ1LuWN7234Q/viewform?embedded=true"
               width="100%"
