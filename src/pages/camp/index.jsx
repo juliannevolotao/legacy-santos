@@ -79,18 +79,6 @@ const Camp = () => {
       ),
     },
     {
-      question: "Como funciona o transporte?",
-      answer: (
-        <>
-          Vamos todos juntos de ônibus! <br />
-          <br />
-          <strong>
-            Por segurança e integração, não será permitido ir de carro.
-          </strong>
-        </>
-      ),
-    },
-    {
       question: "O que devo levar?",
       answer:
         "Em breve publicaremos uma lista completa do que levar, mas já pode ir separando roupas confortáveis, itens de higiene pessoal, Bíblia, caderno e caneta!",
@@ -103,13 +91,13 @@ const Camp = () => {
       <section className="flex flex-col items-center justify-center py-20 px-6 text-center bg-[#b73426] bg-[url(/images/camp/fundo1.jpg)]  bg-cover bg-center text-white">
         <div className="max-w-[1400px] mx-auto relative pt-10 not-lg:pt-20">
           <img
-            src="/images/camp/logo.png"
+            src="/images/camp/logo-bege.png"
             alt="Acampamento Legacy Santos"
-            className={`h-auto rounded-lg z-10 max-w-[300px] not-lg:max-w-[100px] absolute -top-[60px] not-lg:-top-[35px] -left-[170px] not-lg:-left-[20px] ${campStyles.mainLogo}`}
+            className={`h-auto rounded-lg z-10 max-w-[250px] not-lg:max-w-[150px] absolute -top-[60px] not-lg:-top-[50px] -left-[29px] not-lg:-left-[15px] ${campStyles.mainLogo}`}
           />
           <div className="flex items-center z-20 not-lg:flex-col gap-8 justify-between max-w-[1200px] mx-auto">
             <div className="flex flex-col items-start text-[#ece0c1]">
-              <h1 className="font-bold mb-4 uppercase tracking-tighter text-5xl">
+              <h1 className="font-bold mb-4 lg:pt-10 uppercase tracking-tighter text-5xl">
                 Legacy Camp
               </h1>
               <p className="text-left mb-4 max-w-[440px]">
@@ -168,7 +156,7 @@ const Camp = () => {
               levar pra vida.
             </strong>
           </p>
-          <div className="flex flex-wrap justify-center gap-6 z-20">
+          <div className="flex flex-wrap justify-center gap-6 z-20 w-full">
             {["Fé", "Comunhão", "Propósito", "Renovação"].map((item) => (
               <div
                 key={item}
