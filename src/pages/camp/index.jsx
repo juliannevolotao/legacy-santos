@@ -50,13 +50,12 @@ const Camp = () => {
           <br />
           <br />
           💸 À vista no Pix ou no cartão; <br />
-          💰 Parcelado em até 6x no Pix (primeira parcela ainda neste mês de
-          outubro); <br />
+          💰 Parcelado em até 3x no Pix (primeira parcela ainda neste mês de
+          janeiro); <br />
           💳 Parcelado em até 12x no cartão (com a taxa da maquininha). <br />
           <br />
           <strong>
-            Para garantir sua vaga, é necessário pagar R$107,00, referente à
-            primeira parcela — independente da forma de pagamento.
+            Para garantir sua vaga, é necessário pagar a primeira parcela — independente da forma de pagamento.
           </strong>
         </>
       ),
