@@ -47,14 +47,6 @@ const Home = () => {
                 <ArrowUpRight className={styles.rightIcon} />
               </a>
             </li>
-            <li className={`${styles.socialMediaListItem} ${styles.highlight}`}>
-              <a href="/camp" rel="noopener noreferrer">
-                <Tent className={styles.icon} />
-                <h2>Legacy Camp 2026</h2>
-                <span> 13 a 15 de março | Faça sua inscrição </span>
-                <ArrowUpRight className={styles.rightIcon} />
-              </a>
-            </li>
 
           </ul>
         </div>
@@ -74,23 +66,14 @@ const Home = () => {
               </a>
             </li>
 
-            <li className={styles.socialMediaListItem + " "}>
-              <a href="/camp" rel="noopener noreferrer">
-                <Tent className={styles.icon} />
-                <h2>Legacy Camp 2026</h2>
-                <span> 13 a 15 de março </span>
-                <ArrowUpRight className={styles.rightIcon} />
-              </a>
-            </li>
-
-            <li className={styles.socialMediaListItem + " "}>
+            {/* <li className={styles.socialMediaListItem + " "}>
               <a href="/conference" rel="noopener noreferrer">
                 <TicketCheck className={styles.icon} />
                 <h2>Legacy Conference 2025</h2>
                 <span> Recap | 12 & 13 de setembro </span>
                 <ArrowUpRight className={styles.rightIcon} />
               </a>
-            </li>
+            </li> */}
 
             
           </ul>
