@@ -30,9 +30,8 @@ const Gcs = () => {
             acompanhados de pertinho.
           </p>
           <p>
-            Temos GCs para <strong>mulheres</strong>, <strong>homens</strong>,
-            <strong>mistos</strong>, <strong>atletas</strong> e{" "}
-            <strong>casais</strong>. Encontre o GC mais perto de você!
+            Temos GCs para <strong>mulheres</strong>, <strong>homens</strong>, 
+            <strong> mistos</strong> e <strong>GCs Online.</strong>  Encontre o GC mais perto de você!
           </p>
 
           <a

@@ -39,6 +39,16 @@ const Home = () => {
         <div className={styles.contactSection}>
           <h3> Destaques </h3>
           <ul className={styles.socialMediaList}>
+
+             <li className={styles.socialMediaListItem + " "}>
+              <a href="/conference" rel="noopener noreferrer">
+                <TicketCheck className={styles.icon} />
+                <h2>Legacy Conference 2026</h2>
+                <span> 12 de setembro </span>
+                <ArrowUpRight className={styles.rightIcon} />
+              </a>
+            </li>
+            
             <li className={styles.socialMediaListItem}>
               <a href="/gcs">
                 <MapIcon className={styles.icon} />
@@ -47,6 +57,8 @@ const Home = () => {
                 <ArrowUpRight className={styles.rightIcon} />
               </a>
             </li>
+
+           
 
           </ul>
         </div>
@@ -66,14 +78,7 @@ const Home = () => {
               </a>
             </li>
 
-            {/* <li className={styles.socialMediaListItem + " "}>
-              <a href="/conference" rel="noopener noreferrer">
-                <TicketCheck className={styles.icon} />
-                <h2>Legacy Conference 2025</h2>
-                <span> Recap | 12 & 13 de setembro </span>
-                <ArrowUpRight className={styles.rightIcon} />
-              </a>
-            </li> */}
+            
 
             
           </ul>

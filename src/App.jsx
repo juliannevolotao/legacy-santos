@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { Analytics } from '@vercel/analytics/react';
 import Home from './pages/home'
-import Conference from './pages/conference/finalConf'
+import Conference from './pages/conference'
 import Camp from './pages/camp';
 import Gcs from './pages/gcs';
 
