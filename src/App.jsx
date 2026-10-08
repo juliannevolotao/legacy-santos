@@ -3,6 +3,7 @@ import { Analytics } from '@vercel/analytics/react';
 import Home from './pages/home'
 import Conference from './pages/conference'
 import Camp from './pages/camp';
+import CampLegacy from './pages/camp/legacy';
 import Gcs from './pages/gcs';
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/conference" element={<Conference />} />
         <Route path="/camp" element={<Camp />} />
+        <Route path="/camp-antigo" element={<CampLegacy />} />
         <Route path="/gcs" element={<Gcs />} />
       </Routes>
       <Analytics />
