@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import styles from "./home.module.css";
 import { Instagram, X } from "lucide-react";
 
@@ -205,7 +206,7 @@ const Home = () => {
       <section id="agenda" className={styles.section}>
         <div className={styles.sectionHead}>
           <h2 className={styles.sectionTitle}>O que rola por aqui</h2>
-          <span className={styles.sectionSub}>Dois jeitos de chegar junto</span>
+          <span className={styles.sectionSub}>Três jeitos de chegar junto</span>
         </div>
 
         <div className={styles.cardsGrid}>
@@ -242,6 +243,23 @@ const Home = () => {
               a semana.
             </span>
           </a>
+
+          <Link to="/camp" className={styles.card}>
+            <img
+              src="/images/home/camp-grupo.jpg"
+              alt="Jovens reunidos no Legacy Camp"
+              className={styles.cardImg}
+              style={{ objectPosition: "50% 35%" }}
+            />
+            <span className={styles.cardOverlay} />
+            <span className={styles.cardNum}>03</span>
+            <span className={styles.cardTag}>Uma vez por ano</span>
+            <strong className={styles.cardTitle}>Legacy Camp</strong>
+            <span className={styles.cardText}>
+              Um final de semana inteiro de imersão, comunhão e presença de
+              Deus. Garanta sua vaga.
+            </span>
+          </Link>
         </div>
       </section>
 
