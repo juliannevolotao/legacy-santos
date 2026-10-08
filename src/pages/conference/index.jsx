@@ -1,65 +1,86 @@
 import styles from "./conference.module.css";
-import { ArrowLeft } from "lucide-react";
+import RedirectButton from "../../components/conference/RedirectButton";
+import Timeline from "../../components/conference/Timeline";
+import LineUpCard from "../../components/conference/LineUpCard";
+import FAQ from "../../components/conference/Faq";
+import TicketCard from "../../components/conference/TicketCard";
 
-const INSTAGRAM_URL = "https://www.instagram.com/legacylagoinhasantos";
+const PreConference = () => {
+  const REDIRECT_URL = "https://articket.com.br/e/4095/legacy-conf";
 
-const Conference = () => {
+  const LINEUP = [
+    {
+      name: "",
+      description: "",
+      image: "",
+    },
+    {
+      name: "",
+      description: "",
+      image: "",
+    },
+    {
+      name: "",
+      description: "",
+      image: "",
+    },
+    {
+      name: "",
+      description: "",
+      image: "",
+    },
+    {
+      name: "",
+      description: "",
+      image: "",
+    },
+    {
+      name: "",
+      description: "",
+      image: "",
+    },
+  ];
+
+  const TICKETS = [
+    {
+      status: "Comprar",
+      titulo: "Pré-Venda",
+      valor: "65,00",
+      isActive: true,
+      image: "/images/conference/tickets/pre-venda-esgotado.png",
+    },
+    {
+      status: "Comprar",
+      titulo: "Lote 1",
+      valor: "",
+      isActive: true,
+      image: "/images/conference/tickets/lote1.png",
+      url: REDIRECT_URL,
+    },
+    {
+      status: "Comprar",
+      titulo: "Lote 2",
+      valor: "",
+      isActive: false,
+      image: "/images/conference/tickets/lote2.png",
+    },
+    {
+      status: "Comprar",
+      titulo: "Lote 3",
+      valor: "",
+      isActive: false,
+      image: "/images/conference/tickets/lote3.png",
+    },
+  ];
   return (
-    <div className={styles.page}>
-      <div className={styles.stage}>
-        <div className={styles.eyebrow}>
-          <span className={styles.dot} />
-          Sinal em reconstrução
-        </div>
+    <>
+    <div className="w-full h-screen flex flex-col items-center justify-center gap-4">
 
-        <div className={styles.code} aria-label="Erro 404">
-          <span className={styles.base}>404</span>
-          <span className={styles.layerRed} aria-hidden="true">404</span>
-          <span className={styles.layerCyan} aria-hidden="true">404</span>
-          <span className={styles.shards} aria-hidden="true">
-            <span></span>
-            <span></span>
-            <span></span>
-          </span>
-        </div>
-
-        <h1 className={styles.headline}>
-          Essa transmissão ainda não começou.
-        </h1>
-
-        <p className={styles.bodyCopy}>
-          A <strong>Legacy Conference</strong> está sendo reconstruída nos
-          bastidores. Em breve soltamos a data, as informações do evento e a
-          inscrição — por enquanto, essa página ficou perdida no sinal.
-        </p>
-
-        <div className={styles.divider} />
-
-        <div className={styles.status}>
-          <span>
-            Status <span className={styles.accent}>em breve</span>
-          </span>
-          <span className={styles.sep}>/</span>
-          <span>
-            Fique de olho no{" "}
-            <a
-              className={styles.handle}
-              href={INSTAGRAM_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              @legacylagoinhasantos
-            </a>
-          </span>
-        </div>
-
-        <a className={styles.back} href="/">
-          <ArrowLeft />
-          Voltar para a home
-        </a>
-      </div>
+      <h1 className="font-bold"> Em Breve </h1>
+      <p className="text-sm max-w-96 text-center">Estamos preparando uma experiência incrível para você! Em breve, divulgaremos mais informações sobre a conferência. Fique atento às nossas redes sociais e ao nosso site para não perder nenhuma novidade!</p>
     </div>
+    </>
   );
 };
 
-export default Conference;
+export default PreConference;
