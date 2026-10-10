@@ -72,15 +72,26 @@ const FAQ = [
   },
 ];
 
-const TopoCorners = ({ faded = false }) => (
-  <div
-    className={`${styles.topoCorners} ${faded ? styles.topoCornersFaded : ""}`}
-    aria-hidden="true"
-  >
-    <img src="/images/camp/2026/identidade/topo-corner-tl.png" alt="" className={styles.topoTl} />
-    <img src="/images/camp/2026/identidade/topo-corner-br.png" alt="" className={styles.topoBr} />
-  </div>
-);
+const TopoCorners = ({ faded = false }) => {
+  const suffix = faded ? "-creme" : "";
+  return (
+    <div
+      className={`${styles.topoCorners} ${faded ? styles.topoCornersFaded : ""}`}
+      aria-hidden="true"
+    >
+      <img
+        src={`/images/camp/2026/identidade/topo-corner-tl${suffix}.png`}
+        alt=""
+        className={styles.topoTl}
+      />
+      <img
+        src={`/images/camp/2026/identidade/topo-corner-br${suffix}.png`}
+        alt=""
+        className={styles.topoBr}
+      />
+    </div>
+  );
+};
 
 const Camp2026 = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -215,6 +226,7 @@ const Camp2026 = () => {
       </section>
 
       <section id="local" className={styles.sectionAlt}>
+        <TopoCorners faded />
         <Reveal className={styles.sectionHead}>
           <span className={styles.eyebrow}>Onde vai rolar</span>
           <h2 className={styles.sectionTitle}>O local do Camp</h2>
@@ -233,6 +245,7 @@ const Camp2026 = () => {
       </section>
 
       <section id="faq" className={styles.section}>
+        <TopoCorners faded />
         <Reveal className={styles.sectionHead}>
           <span className={styles.eyebrow}>Possíveis dúvidas</span>
           <h2 className={styles.sectionTitle}>Perguntas frequentes</h2>
@@ -263,6 +276,7 @@ const Camp2026 = () => {
       </section>
 
       <section className={styles.ticketSection}>
+        <TopoCorners faded />
         <Reveal className={styles.ticket}>
           <div className={styles.ticketMain}>
             <img
