@@ -15,10 +15,11 @@ const MARQUEE_PHRASES = [
 ];
 
 const POLAROIDS = [
-  { src: "/images/camp/2026/piscina.webp", rot: "-6deg" },
-  { src: "/images/camp/2026/auditorio.webp", rot: "4deg" },
-  { src: "/images/camp/2026/campo.webp", rot: "-3deg" },
-  { src: "/images/camp/2026/quarto-beliche-2.webp", rot: "6deg" },
+  { src: "/images/camp/2026/momentos/gc-ao-ar-livre.jpg", rot: "-6deg" },
+  { src: "/images/camp/2026/momentos/bandeira-yeshua.jpg", rot: "4deg" },
+  { src: "/images/camp/2026/momentos/abraco.jpg", rot: "-3deg" },
+  { src: "/images/camp/2026/momentos/oracao-no-chao.jpg", rot: "5deg" },
+  { src: "/images/camp/2026/momentos/ministracao.jpg", rot: "-4deg" },
 ];
 
 const GALERIA = [
