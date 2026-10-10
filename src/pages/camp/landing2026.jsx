@@ -286,7 +286,6 @@ const Camp2026 = () => {
       </section>
 
       <section className={styles.ticketSection}>
-        <TopoCorners faded />
         <Reveal className={styles.ticket}>
           <div className={styles.ticketMain}>
             <img
