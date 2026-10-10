@@ -167,6 +167,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  filter: grayscale(1);
 }
 
 .heroOverlay {
@@ -401,6 +402,18 @@
   margin: 0 auto;
 }
 
+.section::after,
+.sectionAlt::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  opacity: 0.1;
+  mix-blend-mode: overlay;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
 .sectionAlt {
   max-width: none;
   background: #5a1a24;
@@ -609,6 +622,8 @@
 }
 
 .ticket {
+  position: relative;
+  isolation: isolate;
   display: flex;
   flex-wrap: wrap;
   align-items: stretch;
@@ -616,6 +631,17 @@
   overflow: hidden;
   border: 1px solid rgba(237, 227, 208, 0.18);
   background: #2d0c12;
+}
+
+.ticket::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  opacity: 0.08;
+  mix-blend-mode: overlay;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
 }
 
 .ticketMain {
