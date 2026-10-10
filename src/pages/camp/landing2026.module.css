@@ -155,39 +155,38 @@
   isolation: isolate;
   min-height: 100svh;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
+  background: #6b1f2b;
   overflow: hidden;
 }
 
-.heroImg {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -3;
-}
-
-.heroOverlay {
-  position: absolute;
-  inset: 0;
-  z-index: -2;
-  background: linear-gradient(
-    to top,
-    rgba(45, 12, 18, 0.96) 5%,
-    rgba(45, 12, 18, 0.75) 45%,
-    rgba(107, 31, 43, 0.55) 100%
-  );
-}
-
-.topoLines {
+.topoCorners {
   position: absolute;
   inset: 0;
   z-index: -1;
-  opacity: 0.18;
-  background-image:
-    repeating-radial-gradient(circle at 15% 20%, transparent 0, transparent 40px, rgba(237, 227, 208, 0.5) 41px, transparent 42px);
+  opacity: 0.45;
   pointer-events: none;
+}
+
+.topoCornersFaded {
+  opacity: 0.25;
+}
+
+.topoTl,
+.topoBr {
+  position: absolute;
+  width: clamp(220px, 28vw, 420px);
+  height: auto;
+}
+
+.topoTl {
+  top: 0;
+  left: 0;
+}
+
+.topoBr {
+  bottom: 0;
+  right: 0;
 }
 
 .heroContent {
@@ -201,7 +200,7 @@
   align-items: center;
   text-align: center;
   gap: 18px;
-  padding: 140px 20px 70px;
+  padding: 150px 20px 90px;
 }
 
 .heroMark {
@@ -242,6 +241,50 @@
   justify-content: center;
   gap: 12px;
   margin-top: 6px;
+}
+
+/* Hero polaroids */
+.polaroids {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 0;
+  margin-top: 28px;
+  padding: 0 10px;
+}
+
+.polaroid {
+  flex: none;
+  width: clamp(76px, 11vw, 118px);
+  background: #ede3d0;
+  padding: 6px 6px 18px;
+  border-radius: 3px;
+  box-shadow: 0 16px 30px rgba(20, 5, 8, 0.45);
+  transform: rotate(var(--rot, 0deg));
+  transition: transform 0.25s ease;
+}
+
+.polaroid:not(:first-child) {
+  margin-left: -18px;
+}
+
+.polaroid:hover {
+  transform: rotate(0deg) translateY(-6px);
+  z-index: 2;
+}
+
+.polaroid img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: 1px;
+}
+
+@media (max-width: 560px) {
+  .polaroid:not(:first-child) {
+    margin-left: -24px;
+  }
 }
 
 .btnPrimary {
@@ -328,6 +371,9 @@
 /* Sections */
 .section,
 .sectionAlt {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
   padding: clamp(60px, 9vw, 110px) clamp(18px, 4vw, 48px);
   max-width: 1280px;
   margin: 0 auto;

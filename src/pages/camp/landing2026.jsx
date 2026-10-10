@@ -14,6 +14,13 @@ const MARQUEE_PHRASES = [
   "Anchored in God",
 ];
 
+const POLAROIDS = [
+  { src: "/images/camp/2026/piscina.webp", rot: "-6deg" },
+  { src: "/images/camp/2026/auditorio.webp", rot: "4deg" },
+  { src: "/images/camp/2026/campo.webp", rot: "-3deg" },
+  { src: "/images/camp/2026/quarto-beliche-2.webp", rot: "6deg" },
+];
+
 const GALERIA = [
   { src: "/images/camp/2026/piscina.webp", alt: "Piscinas do novo local do Legacy Camp" },
   { src: "/images/camp/2026/campo.webp", alt: "Campo gramado para atividades e esportes" },
@@ -64,6 +71,16 @@ const FAQ = [
   },
 ];
 
+const TopoCorners = ({ faded = false }) => (
+  <div
+    className={`${styles.topoCorners} ${faded ? styles.topoCornersFaded : ""}`}
+    aria-hidden="true"
+  >
+    <img src="/images/camp/2026/identidade/topo-corner-tl.png" alt="" className={styles.topoTl} />
+    <img src="/images/camp/2026/identidade/topo-corner-br.png" alt="" className={styles.topoBr} />
+  </div>
+);
+
 const Camp2026 = () => {
   const [scrolled, setScrolled] = useState(false);
   const [openIndex, setOpenIndex] = useState(null);
@@ -107,13 +124,7 @@ const Camp2026 = () => {
       </header>
 
       <section id="top" className={styles.hero}>
-        <img
-          src="/images/camp/2026/campo.webp"
-          alt=""
-          className={styles.heroImg}
-        />
-        <div className={styles.heroOverlay} />
-        <div className={styles.topoLines} aria-hidden="true" />
+        <TopoCorners />
         <div className={styles.heroContent}>
           <img
             src="/images/camp/2026/identidade/legacy-camp-27-mark.png"
@@ -137,6 +148,14 @@ const Camp2026 = () => {
               Saiba mais
             </a>
           </div>
+
+          <div className={styles.polaroids} aria-hidden="true">
+            {POLAROIDS.map((foto) => (
+              <div key={foto.src} className={styles.polaroid} style={{ "--rot": foto.rot }}>
+                <img src={foto.src} alt="" loading="lazy" />
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -156,6 +175,7 @@ const Camp2026 = () => {
       </div>
 
       <section id="sobre" className={styles.section}>
+        <TopoCorners faded />
         <Reveal className={styles.sectionHead}>
           <span className={styles.eyebrow}>Sobre o camp</span>
           <h2 className={styles.sectionTitle}>Mais que um acampamento</h2>
