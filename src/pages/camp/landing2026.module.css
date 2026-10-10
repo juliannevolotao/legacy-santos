@@ -335,6 +335,8 @@
 
 /* Marquee */
 .marquee {
+  position: relative;
+  z-index: 3;
   width: 100%;
   overflow: hidden;
   background: #c8551f;
