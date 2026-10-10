@@ -73,26 +73,13 @@ const FAQ = [
   },
 ];
 
-const TopoCorners = ({ faded = false }) => {
-  const suffix = faded ? "-creme" : "";
-  return (
-    <div
-      className={`${styles.topoCorners} ${faded ? styles.topoCornersFaded : ""}`}
-      aria-hidden="true"
-    >
-      <img
-        src={`/images/camp/2026/identidade/topo-corner-tl${suffix}.png`}
-        alt=""
-        className={styles.topoTl}
-      />
-      <img
-        src={`/images/camp/2026/identidade/topo-corner-br${suffix}.png`}
-        alt=""
-        className={styles.topoBr}
-      />
-    </div>
-  );
-};
+const SectionDivider = ({ color, flip = false }) => (
+  <div
+    className={`${styles.divider} ${flip ? styles.dividerFlip : ""}`}
+    style={{ background: color }}
+    aria-hidden="true"
+  />
+);
 
 const Camp2026 = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -152,7 +139,6 @@ const Camp2026 = () => {
           className={styles.heroImg}
         />
         <div className={styles.heroOverlay} />
-        <TopoCorners />
         <div className={styles.heroContent}>
           <img
             src="/images/camp/2026/identidade/legacy-camp-27-mark.png"
@@ -202,8 +188,9 @@ const Camp2026 = () => {
         </div>
       </div>
 
+      <SectionDivider color="#6b1f2b" />
+
       <section id="sobre" className={styles.section}>
-        <TopoCorners faded />
         <Reveal className={styles.sectionHead}>
           <span className={styles.eyebrow}>Sobre o camp</span>
           <h2 className={styles.sectionTitle}>Mais que um acampamento</h2>
@@ -235,8 +222,9 @@ const Camp2026 = () => {
         </Reveal>
       </section>
 
+      <SectionDivider color="#5a1a24" flip />
+
       <section id="local" className={styles.sectionAlt}>
-        <TopoCorners faded />
         <Reveal className={styles.sectionHead}>
           <span className={styles.eyebrow}>Onde vai rolar</span>
           <h2 className={styles.sectionTitle}>O local do Camp</h2>
@@ -254,8 +242,9 @@ const Camp2026 = () => {
         </div>
       </section>
 
+      <SectionDivider color="#6b1f2b" />
+
       <section id="faq" className={styles.section}>
-        <TopoCorners faded />
         <Reveal className={styles.sectionHead}>
           <span className={styles.eyebrow}>Possíveis dúvidas</span>
           <h2 className={styles.sectionTitle}>Perguntas frequentes</h2>
