@@ -1,11 +1,12 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { Instagram, MapPin, Tent, Flame, Mountain, Waves, ArrowUpRight } from "lucide-react";
+import { Instagram, MapPin, Tent, Flame, Mountain, Waves, ArrowUpRight, MessageCircle } from "lucide-react";
 import styles from "./landing2026.module.css";
 import Reveal from "./Reveal";
 
 const INSCRICAO_URL = "https://forms.gle/WqGS9R78AQktRcFA8";
 const INSTAGRAM_URL = "https://www.instagram.com/legacylagoinhasantos";
+const WHATSAPP_GRUPO_URL = "https://chat.whatsapp.com/L6pIrMeAoPe6wbo8N3LmQB";
 
 const MARQUEE_PHRASES = [
   "Legacy Camp 27",
@@ -119,6 +120,15 @@ const Camp2026 = () => {
             <a href="#faq">FAQ</a>
           </nav>
           <div className={styles.headerActions}>
+            <a
+              href={WHATSAPP_GRUPO_URL}
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Grupo do WhatsApp do Legacy Camp"
+              className={styles.instaBtn}
+            >
+              <MessageCircle size={18} />
+            </a>
             <a
               href={INSTAGRAM_URL}
               target="_blank"
@@ -309,6 +319,15 @@ const Camp2026 = () => {
             <a href={INSCRICAO_URL} target="_blank" rel="noreferrer" className={styles.btnPrimary}>
               Fazer inscrição
               <ArrowUpRight size={18} />
+            </a>
+            <a
+              href={WHATSAPP_GRUPO_URL}
+              target="_blank"
+              rel="noreferrer"
+              className={styles.btnSecondary}
+            >
+              <MessageCircle size={18} />
+              Entrar no grupo
             </a>
           </div>
         </Reveal>
