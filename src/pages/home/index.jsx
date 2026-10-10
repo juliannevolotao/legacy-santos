@@ -244,7 +244,7 @@ const Home = () => {
             </span>
           </a>
 
-          <Link to="/camp" className={styles.card}>
+          <Link to="/camp-2026" className={styles.card}>
             <img
               src="/images/home/camp-grupo.jpg"
               alt="Jovens reunidos no Legacy Camp"
