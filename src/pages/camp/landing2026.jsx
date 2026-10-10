@@ -7,6 +7,13 @@ import Reveal from "./Reveal";
 const INSCRICAO_URL = "https://forms.gle/WqGS9R78AQktRcFA8";
 const INSTAGRAM_URL = "https://www.instagram.com/legacylagoinhasantos";
 
+const MARQUEE_PHRASES = [
+  "Legacy Camp 27",
+  "Live the legacy",
+  "Chosen and called",
+  "Anchored in God",
+];
+
 const GALERIA = [
   { src: "/images/camp/2026/piscina.webp", alt: "Piscinas do novo local do Legacy Camp" },
   { src: "/images/camp/2026/campo.webp", alt: "Campo gramado para atividades e esportes" },
@@ -135,16 +142,14 @@ const Camp2026 = () => {
 
       <div className={styles.marquee}>
         <div className={styles.marqueeTrack}>
-          {Array.from({ length: 2 }).map((_, i) => (
-            <span key={i} style={{ display: "flex", gap: "40px" }}>
-              <span>Legacy Camp 27</span>
-              <span className={styles.marqueeDot}>✱</span>
-              <span>Live the legacy</span>
-              <span className={styles.marqueeDot}>✱</span>
-              <span>Chosen and called</span>
-              <span className={styles.marqueeDot}>✱</span>
-              <span>Anchored in God</span>
-              <span className={styles.marqueeDot}>✱</span>
+          {Array.from({ length: 8 }).map((_, i) => (
+            <span key={i} className={styles.marqueeGroup}>
+              {MARQUEE_PHRASES.map((frase) => (
+                <span key={frase} className={styles.marqueeItem}>
+                  {frase}
+                  <span className={styles.marqueeDot}>✱</span>
+                </span>
+              ))}
             </span>
           ))}
         </div>
@@ -185,7 +190,7 @@ const Camp2026 = () => {
       <section id="local" className={styles.sectionAlt}>
         <Reveal className={styles.sectionHead}>
           <span className={styles.eyebrow}>Onde vai rolar</span>
-          <h2 className={styles.sectionTitle}>O novo local do Camp</h2>
+          <h2 className={styles.sectionTitle}>O local do Camp</h2>
           <span className={styles.sectionSub}>
             Piscina, campo, auditório e alojamento confortável
           </span>

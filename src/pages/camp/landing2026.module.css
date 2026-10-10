@@ -301,6 +301,20 @@
   color: #2d0c12;
 }
 
+.marqueeGroup {
+  display: flex;
+  gap: 40px;
+  flex: none;
+}
+
+.marqueeItem {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  flex: none;
+  white-space: nowrap;
+}
+
 .marqueeDot {
   color: #ede3d0;
 }
