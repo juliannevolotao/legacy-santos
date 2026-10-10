@@ -125,6 +125,12 @@ const Camp2026 = () => {
       </header>
 
       <section id="top" className={styles.hero}>
+        <img
+          src="/images/camp/2026/hero-grupo.jpg"
+          alt=""
+          className={styles.heroImg}
+        />
+        <div className={styles.heroOverlay} />
         <TopoCorners />
         <div className={styles.heroContent}>
           <img
