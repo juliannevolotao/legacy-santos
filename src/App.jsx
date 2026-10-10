@@ -4,6 +4,7 @@ import Home from './pages/home'
 import Conference from './pages/conference'
 import Camp from './pages/camp';
 import CampLegacy from './pages/camp/legacy';
+import Camp2026 from './pages/camp/landing2026';
 import Gcs from './pages/gcs';
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <Route path="/conference" element={<Conference />} />
         <Route path="/camp" element={<Camp />} />
         <Route path="/camp-antigo" element={<CampLegacy />} />
+        <Route path="/camp-2026" element={<Camp2026 />} />
         <Route path="/gcs" element={<Gcs />} />
       </Routes>
       <Analytics />
