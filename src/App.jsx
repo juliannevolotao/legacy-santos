@@ -16,7 +16,7 @@ function App() {
         <Route path="/conference" element={<Conference />} />
         <Route path="/camp" element={<Camp />} />
         <Route path="/camp-antigo" element={<CampLegacy />} />
-        <Route path="/camp-2026" element={<Camp2026 />} />
+        <Route path="/camp-2027" element={<Camp2026 />} />
         <Route path="/gcs" element={<Gcs />} />
       </Routes>
       <Analytics />
