@@ -43,18 +43,43 @@ const DESTAQUES = [
 
 const FAQ = [
   {
-    pergunta: "Quando vai ser o Camp 27?",
-    resposta:
-      "Data em definição — em breve anunciamos aqui e nas nossas redes. Fique de olho pra garantir sua vaga assim que abrir.",
+    pergunta: "Quando e onde vai ser o Camp 27?",
+    resposta: "De 2 a 4 de abril de 2027, em Mogi das Cruzes - SP.",
   },
   {
     pergunta: "Quem pode participar?",
     resposta: "Jovens de 18 a 35 anos que querem viver um tempo intenso com Deus.",
   },
   {
-    pergunta: "O que está incluso na inscrição?",
+    pergunta: "Quanto custa a inscrição?",
     resposta:
-      "Hospedagem, alimentação, transporte e todas as atividades do camp. Valores e formas de pagamento divulgamos junto com a data.",
+      "O valor da inscrição é R$ 762,00. Dá pra pagar à vista (dinheiro, Pix ou cartão com taxa), parcelado no cartão em até 12x (com juros da maquininha) ou parcelado no Pix até 26 de março — quanto antes você começar, mais parcelas você tem:",
+    tabela: {
+      colunas: ["Começando em", "Parcelas no Pix"],
+      linhas: [
+        ["Outubro", "6x de R$ 127,00"],
+        ["Novembro", "5x de R$ 152,40"],
+        ["Dezembro", "4x de R$ 190,50"],
+        ["Janeiro", "3x de R$ 254,00"],
+        ["Fevereiro", "2x de R$ 381,00"],
+        ["Março", "1x de R$ 762,00"],
+      ],
+    },
+  },
+  {
+    pergunta: "O que está incluso no valor?",
+    resposta:
+      "Transporte de ônibus (ida e volta), camiseta, alimentação e hospedagem durante todo o período do acampamento.",
+  },
+  {
+    pergunta: "Como garanto minha vaga?",
+    resposta:
+      "Preencha o formulário de inscrição e faça o pagamento (à vista ou da primeira parcela) — a chave Pix e o contato pra enviar o comprovante estão no próprio formulário. A inscrição só é confirmada depois dessas duas etapas. As vagas são limitadas!",
+  },
+  {
+    pergunta: "Preenchi o formulário com alguma informação errada. E agora?",
+    resposta:
+      "Não preencha de novo! Envie a inscrição apenas uma vez e, se precisar corrigir algo, fale com um dos líderes.",
   },
   {
     pergunta: "Como funciona o transporte?",
@@ -69,7 +94,7 @@ const FAQ = [
   {
     pergunta: "O que devo levar?",
     resposta:
-      "Assim que a data fechar, publicamos a lista completa. Já pode ir separando roupa confortável, Bíblia, caderno e caneta.",
+      "Em breve vamos disponibilizar o Manual do Acampante, com todas as orientações e a lista completa do que levar.",
   },
 ];
 
@@ -268,6 +293,26 @@ const Camp2026 = () => {
                 }`}
               >
                 <p>{item.resposta}</p>
+                {item.tabela && (
+                  <table className={styles.faqTable}>
+                    <thead>
+                      <tr>
+                        {item.tabela.colunas.map((coluna) => (
+                          <th key={coluna}>{coluna}</th>
+                        ))}
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {item.tabela.linhas.map((linha) => (
+                        <tr key={linha[0]}>
+                          {linha.map((celula) => (
+                            <td key={celula}>{celula}</td>
+                          ))}
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                )}
               </div>
             </Reveal>
           ))}
@@ -288,11 +333,11 @@ const Camp2026 = () => {
               <div className={styles.ticketRow}>
                 <div>
                   <span className={styles.ticketLabel}>Data</span>
-                  <strong>Em breve</strong>
+                  <strong>2 a 4 de abril de 2027</strong>
                 </div>
                 <div>
                   <span className={styles.ticketLabel}>Local</span>
-                  <strong>Em breve</strong>
+                  <strong>Mogi das Cruzes - SP</strong>
                 </div>
               </div>
             </div>

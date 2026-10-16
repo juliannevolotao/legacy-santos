@@ -580,7 +580,7 @@
 }
 
 .faqAnswerOpen {
-  max-height: 240px;
+  max-height: 700px;
 }
 
 .faqAnswer p {
@@ -589,6 +589,39 @@
   font-size: 14px;
   line-height: 1.6;
   color: #cbb8a6;
+}
+
+.faqTable {
+  width: 100%;
+  margin: -6px 0 18px;
+  border-collapse: collapse;
+  font-size: 14px;
+  color: #cbb8a6;
+}
+
+.faqTable th,
+.faqTable td {
+  padding: 8px 12px;
+  text-align: left;
+  border-bottom: 1px solid rgba(237, 227, 208, 0.14);
+}
+
+.faqTable th {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #e8a05a;
+}
+
+.faqTable tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.faqTable td:last-child {
+  color: #ede3d0;
+  font-weight: 600;
 }
 
 /* Ticket CTA */
