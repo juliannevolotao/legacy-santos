@@ -230,12 +230,6 @@
   color: #e8a05a;
 }
 
-.heroTagBar {
-  width: 22px;
-  height: 2px;
-  background: #e8a05a;
-}
-
 .heroText {
   margin: 0;
   max-width: 48ch;
@@ -340,7 +334,7 @@
   width: 100%;
   overflow: hidden;
   background: #c8551f;
-  padding: 10px 0;
+  padding: 14px 0;
   border-top: 1px solid rgba(45, 12, 18, 0.2);
   border-bottom: 1px solid rgba(45, 12, 18, 0.2);
 }
@@ -348,9 +342,10 @@
 .marqueeTrack {
   display: flex;
   width: max-content;
-  animation: marquee 22s linear infinite;
+  animation: marquee 30s linear infinite;
   font-family: "Anton", sans-serif;
-  font-size: 14px;
+  font-size: clamp(16px, 2vw, 20px);
+  line-height: 1;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: #2d0c12;
@@ -358,19 +353,20 @@
 
 .marqueeGroup {
   display: flex;
-  gap: 40px;
   flex: none;
 }
 
 .marqueeItem {
   display: flex;
   align-items: center;
-  gap: 40px;
+  gap: 28px;
+  padding-right: 28px;
   flex: none;
   white-space: nowrap;
 }
 
 .marqueeDot {
+  font-size: 0.8em;
   color: #ede3d0;
 }
 
@@ -438,49 +434,165 @@
 /* Sobre */
 .sobreGrid {
   display: grid;
-  grid-template-columns: 1.3fr 1fr;
-  gap: clamp(28px, 5vw, 56px);
+  grid-template-columns: 1.1fr 1fr;
+  gap: clamp(36px, 6vw, 80px);
   align-items: center;
+}
+
+.sobreContent {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.sobreTitle {
+  font-size: clamp(40px, 6.4vw, 76px);
+  line-height: 0.95;
+}
+
+.sobreTitle span {
+  display: block;
+  color: #e8a05a;
 }
 
 .sobreText {
   margin: 0;
-  font-size: clamp(15px, 1.8vw, 18px);
+  font-size: clamp(15px, 1.7vw, 17px);
   line-height: 1.75;
   color: #ead9c9;
-  max-width: 54ch;
+  max-width: 52ch;
+}
+
+.sobreQuote {
+  margin: 6px 0 0;
+  padding-left: 18px;
+  border-left: 3px solid #c8551f;
+  font-family: "Anton", sans-serif;
+  font-size: clamp(20px, 2.4vw, 26px);
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: #ede3d0;
+  max-width: 26ch;
+}
+
+.sobreFotos {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  max-width: 520px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.sobreFotos img {
+  position: absolute;
+  display: block;
+}
+
+.sobreFotoGrande {
+  top: 0;
+  right: 0;
+  width: 86%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 18px;
+  box-shadow: 0 24px 50px rgba(20, 4, 8, 0.45);
+}
+
+.sobreFotoPequena {
+  left: 0;
+  bottom: 0;
+  width: 46%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  border: 8px solid #ede3d0;
+  border-bottom-width: 28px;
+  border-radius: 4px;
+  transform: rotate(-5deg);
+  box-shadow: 0 18px 40px rgba(20, 4, 8, 0.5);
+}
+
+.sobreSelo {
+  right: 2%;
+  bottom: 4%;
+  width: 30%;
+  animation: spin 40s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sobreSelo {
+    animation: none;
+  }
 }
 
 .destaquesGrid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 12px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+  margin-top: clamp(48px, 7vw, 80px);
 }
 
 .destaqueCard {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  padding: 24px 12px;
-  border-radius: 14px;
-  background: rgba(237, 227, 208, 0.06);
-  border: 1px solid rgba(237, 227, 208, 0.14);
-  font-size: 12.5px;
-  font-weight: 600;
-  letter-spacing: 0.04em;
+  gap: 8px;
+  padding: 22px 20px;
+  border-radius: 16px;
+  background: rgba(237, 227, 208, 0.05);
+  border: 1px solid rgba(237, 227, 208, 0.12);
+  transition: opacity 0.7s ease, transform 0.7s ease, background 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.destaqueCard:hover {
+  background: rgba(237, 227, 208, 0.09);
+  border-color: rgba(232, 160, 90, 0.45);
+}
+
+.destaqueIcon {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  margin-bottom: 6px;
+  border-radius: 50%;
+  background: #c8551f;
+  color: #ede3d0;
+}
+
+.destaqueCard strong {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
   color: #ede3d0;
 }
 
-.destaqueCard svg {
-  color: #e8a05a;
+.destaqueTexto {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #cbb8a6;
+}
+
+@media (max-width: 900px) {
+  .destaquesGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 760px) {
   .sobreGrid {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 420px) {
+  .destaqueCard {
+    padding: 18px 14px;
   }
 }
 
@@ -713,11 +825,14 @@
 
 .ticketStamp {
   position: absolute;
-  top: 10px;
-  right: 10px;
-  width: 64px;
-  height: auto;
+  top: 12px;
+  right: 12px;
+  width: 72px;
+  height: 72px;
+  color: #ede3d0;
   opacity: 0.4;
+  transform: rotate(-10deg);
+  pointer-events: none;
 }
 
 @media (max-width: 640px) {

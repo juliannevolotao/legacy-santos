@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Instagram, MapPin, Tent, Flame, Mountain, Waves, ArrowUpRight, MessageCircle } from "lucide-react";
 import styles from "./landing2026.module.css";
 import Reveal from "./Reveal";
+import CampStamp from "./CampStamp";
 
 const INSCRICAO_URL = "https://forms.gle/WqGS9R78AQktRcFA8";
 const INSTAGRAM_URL = "https://www.instagram.com/legacylagoinhasantos";
@@ -10,7 +11,6 @@ const WHATSAPP_GRUPO_URL = "https://chat.whatsapp.com/L6pIrMeAoPe6wbo8N3LmQB";
 
 const MARQUEE_PHRASES = [
   "Legacy Camp 27",
-  "Live the legacy",
   "Chosen and called",
   "Anchored in God",
 ];
@@ -35,10 +35,10 @@ const GALERIA = [
 ];
 
 const DESTAQUES = [
-  { icon: Mountain, label: "Natureza" },
-  { icon: Tent, label: "Comunhão" },
-  { icon: Flame, label: "Adoração" },
-  { icon: Waves, label: "Descanso" },
+  { icon: Mountain, label: "Natureza", texto: "Dias longe da correria, no meio do verde." },
+  { icon: Tent, label: "Comunhão", texto: "Gente nova e amizades que ficam pra vida." },
+  { icon: Flame, label: "Adoração", texto: "Cultos intensos na presença de Deus." },
+  { icon: Waves, label: "Descanso", texto: "Piscina, campo e tempo pra respirar." },
 ];
 
 const FAQ = [
@@ -170,10 +170,7 @@ const Camp2026 = () => {
             alt="Legacy Camp 27"
             className={styles.heroMark}
           />
-          <span className={styles.heroTag}>
-            <span className={styles.heroTagBar} />
-            Retiro de jovens · Live the legacy
-          </span>
+          <span className={styles.heroTag}>Retiro de jovens</span>
           <p className={styles.heroText}>
             Três dias separados pra viver algo novo com Deus e com gente que
             compartilha o mesmo propósito. Natureza, comunhão e presença — tudo
@@ -216,35 +213,61 @@ const Camp2026 = () => {
       <SectionDivider color="#6b1f2b" />
 
       <section id="sobre" className={styles.section}>
-        <Reveal className={styles.sectionHead}>
-          <span className={styles.eyebrow}>Sobre o camp</span>
-          <h2 className={styles.sectionTitle}>Mais que um acampamento</h2>
-        </Reveal>
+        <div className={styles.sobreGrid}>
+          <Reveal className={styles.sobreContent}>
+            <span className={styles.eyebrow}>Sobre o camp</span>
+            <h2 className={`${styles.sectionTitle} ${styles.sobreTitle}`}>
+              Mais que um <span>acampamento</span>
+            </h2>
+            <p className={styles.sobreText}>
+              O Legacy Camp é um tempo separado da rotina pra viver algo genuíno
+              com a presença de Deus. Durante o fim de semana, cada detalhe é
+              pensado pra te levar a um encontro real: momentos de adoração
+              profunda, conexões verdadeiras e experiências que transformam de
+              dentro pra fora.
+            </p>
+            <blockquote className={styles.sobreQuote}>
+              Mais do que um evento, o Camp é um marco — um legado que você
+              carrega pra vida.
+            </blockquote>
+          </Reveal>
 
-        <Reveal delay={80} className={styles.sobreGrid}>
-          <p className={styles.sobreText}>
-            O Legacy Camp é um tempo separado da rotina pra viver algo genuíno
-            com a presença de Deus. Durante o fim de semana, cada detalhe é
-            pensado pra te levar a um encontro real: momentos de adoração
-            profunda, conexões verdadeiras e experiências que transformam de
-            dentro pra fora.
-            <br />
-            <br />
-            Mais do que um evento, o Camp é um marco — um legado que você
-            carrega pra vida.
-          </p>
-          <div className={styles.destaquesGrid}>
-            {DESTAQUES.map((item) => {
-              const Icon = item.icon;
-              return (
-                <div key={item.label} className={styles.destaqueCard}>
-                  <Icon size={26} />
-                  <span>{item.label}</span>
-                </div>
-              );
-            })}
-          </div>
-        </Reveal>
+          <Reveal delay={120} className={styles.sobreFotos}>
+            <img
+              src="/images/camp/2026/momentos/ministracao.jpg"
+              alt="Jovens orando juntos durante uma ministração no camp"
+              className={styles.sobreFotoGrande}
+              loading="lazy"
+            />
+            <img
+              src="/images/camp/2026/momentos/abraco.jpg"
+              alt="Dois jovens se abraçando emocionados no camp"
+              className={styles.sobreFotoPequena}
+              loading="lazy"
+            />
+            <img
+              src="/images/camp/2026/identidade/selo-youth-on-fire.png"
+              alt=""
+              aria-hidden="true"
+              className={styles.sobreSelo}
+            />
+          </Reveal>
+        </div>
+
+        <div className={styles.destaquesGrid}>
+          {DESTAQUES.map((item, index) => {
+            const Icon = item.icon;
+            return (
+              <Reveal key={item.label} delay={index * 70} className={styles.destaqueCard}>
+                <span className={styles.destaqueIcon}>
+                  <Icon size={22} />
+                </span>
+                <strong>{item.label}</strong>
+                <span className={styles.destaqueTexto}>{item.texto}</span>
+              </Reveal>
+            );
+          })}
+        </div>
       </section>
 
       <SectionDivider color="#5a1a24" flip />
@@ -321,6 +344,7 @@ const Camp2026 = () => {
 
       <section className={styles.ticketSection}>
         <Reveal className={styles.ticket}>
+          <CampStamp className={styles.ticketStamp} />
           <div className={styles.ticketMain}>
             <img
               src="/images/camp/2026/identidade/legacy-camp-27-mark.png"
@@ -343,12 +367,6 @@ const Camp2026 = () => {
             </div>
           </div>
           <div className={styles.ticketAction}>
-            <img
-              src="/images/camp/2026/identidade/legacy-camp-27-stamp.png"
-              alt=""
-              className={styles.ticketStamp}
-              aria-hidden="true"
-            />
             <a href={INSCRICAO_URL} target="_blank" rel="noreferrer" className={styles.btnPrimary}>
               Fazer inscrição
               <ArrowUpRight size={18} />
@@ -371,7 +389,7 @@ const Camp2026 = () => {
           <MapPin size={14} />
           Legacy Santos · Igreja Lagoinha Santos
         </Link>
-        <span className={styles.footerText}>Legacy Camp 27 · Live the legacy</span>
+        <span className={styles.footerText}>Legacy Camp 27</span>
       </footer>
     </div>
   );
