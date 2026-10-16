@@ -53,7 +53,7 @@ const FAQ = [
   {
     pergunta: "Quanto custa a inscrição?",
     resposta:
-      "O valor da inscrição é R$ 762,00, que pode ser pago em parcelas. A primeira parcela é de R$ 152,40.",
+      "O valor da inscrição é R$ 762,00 e dá pra parcelar. Quem começa a pagar em outubro parcela em até 5x de R$ 152,40; começando em novembro, são 4x; e assim por diante — quanto antes você começar, mais parcelas você tem.",
   },
   {
     pergunta: "O que está incluso no valor?",
