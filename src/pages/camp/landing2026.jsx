@@ -53,7 +53,7 @@ const FAQ = [
   {
     pergunta: "Quanto custa a inscrição?",
     resposta:
-      "O valor da inscrição é R$ 762,00. Dá pra pagar à vista (dinheiro, Pix ou cartão com taxa), parcelado no cartão em até 12x (com juros da maquininha) ou parcelado no Pix até 26 de março — quanto antes você começar, mais parcelas você tem:",
+      "O valor da inscrição é R$ 762,00. Dá pra pagar à vista (dinheiro, Pix ou cartão com taxa), parcelado no cartão em até 12x (com juros da maquininha) ou parcelado no Pix, com tudo quitado até 20 de março — quanto antes você começar, mais parcelas você tem:",
     tabela: {
       colunas: ["Começando em", "Parcelas no Pix"],
       linhas: [
