@@ -53,7 +53,18 @@ const FAQ = [
   {
     pergunta: "Quanto custa a inscrição?",
     resposta:
-      "O valor da inscrição é R$ 762,00. Dá pra pagar à vista (dinheiro, Pix ou cartão com taxa), parcelado no cartão em até 12x (com juros da maquininha) ou parcelado no Pix até 26 de março: começando em outubro, são até 6x; em novembro, até 5x; e assim por diante — quanto antes você começar, mais parcelas você tem.",
+      "O valor da inscrição é R$ 762,00. Dá pra pagar à vista (dinheiro, Pix ou cartão com taxa), parcelado no cartão em até 12x (com juros da maquininha) ou parcelado no Pix até 26 de março — quanto antes você começar, mais parcelas você tem:",
+    tabela: {
+      colunas: ["Começando em", "Parcelas no Pix"],
+      linhas: [
+        ["Outubro", "6x de R$ 127,00"],
+        ["Novembro", "5x de R$ 152,40"],
+        ["Dezembro", "4x de R$ 190,50"],
+        ["Janeiro", "3x de R$ 254,00"],
+        ["Fevereiro", "2x de R$ 381,00"],
+        ["Março", "1x de R$ 762,00"],
+      ],
+    },
   },
   {
     pergunta: "O que está incluso no valor?",
@@ -282,6 +293,26 @@ const Camp2026 = () => {
                 }`}
               >
                 <p>{item.resposta}</p>
+                {item.tabela && (
+                  <table className={styles.faqTable}>
+                    <thead>
+                      <tr>
+                        {item.tabela.colunas.map((coluna) => (
+                          <th key={coluna}>{coluna}</th>
+                        ))}
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {item.tabela.linhas.map((linha) => (
+                        <tr key={linha[0]}>
+                          {linha.map((celula) => (
+                            <td key={celula}>{celula}</td>
+                          ))}
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                )}
               </div>
             </Reveal>
           ))}
