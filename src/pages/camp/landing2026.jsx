@@ -53,7 +53,7 @@ const FAQ = [
   {
     pergunta: "Quanto custa a inscrição?",
     resposta:
-      "O valor da inscrição é R$ 762,00 e dá pra parcelar. Quem começa a pagar em outubro parcela em até 5x de R$ 152,40; começando em novembro, são 4x; e assim por diante — quanto antes você começar, mais parcelas você tem.",
+      "O valor da inscrição é R$ 762,00. Dá pra pagar à vista (dinheiro, Pix ou cartão com taxa), parcelado no cartão em até 12x (com juros da maquininha) ou parcelado no Pix até 26 de março: começando em outubro, são até 6x; em novembro, até 5x; e assim por diante — quanto antes você começar, mais parcelas você tem.",
   },
   {
     pergunta: "O que está incluso no valor?",
@@ -63,7 +63,7 @@ const FAQ = [
   {
     pergunta: "Como garanto minha vaga?",
     resposta:
-      "Preencha o formulário de inscrição e pague a primeira parcela via Pix — a chave e o contato pra enviar o comprovante estão no próprio formulário. A inscrição só é confirmada depois dessas duas etapas. As vagas são limitadas!",
+      "Preencha o formulário de inscrição e faça o pagamento (à vista ou da primeira parcela) — a chave Pix e o contato pra enviar o comprovante estão no próprio formulário. A inscrição só é confirmada depois dessas duas etapas. As vagas são limitadas!",
   },
   {
     pergunta: "Preenchi o formulário com alguma informação errada. E agora?",
