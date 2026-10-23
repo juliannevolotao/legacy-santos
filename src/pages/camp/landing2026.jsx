@@ -67,6 +67,11 @@ const FAQ = [
     },
   },
   {
+    pergunta: "Posso levar meus filhos?",
+    resposta:
+      "Pode sim! Crianças de até 4 anos não pagam, e de 5 a 10 anos pagam meia (R$ 381,00). As crianças ficam no mesmo quarto que os pais ou responsáveis.",
+  },
+  {
     pergunta: "O que está incluso no valor?",
     resposta:
       "Transporte de ônibus (ida e volta), camiseta, alimentação e hospedagem durante todo o período do acampamento.",
