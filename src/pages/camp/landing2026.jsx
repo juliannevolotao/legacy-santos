@@ -48,8 +48,7 @@ const FAQ = [
   },
   {
     pergunta: "Quem pode participar?",
-    resposta:
-      "Jovens de 18 a 35 anos que querem viver um tempo intenso com Deus. Quem tem filhos pequenos também pode vir: as crianças podem ir junto, acompanhadas dos pais.",
+    resposta: "Jovens de 18 a 35 anos que querem viver um tempo intenso com Deus.",
   },
   {
     pergunta: "Quanto custa a inscrição?",
