@@ -48,7 +48,8 @@ const FAQ = [
   },
   {
     pergunta: "Quem pode participar?",
-    resposta: "Jovens de 18 a 35 anos que querem viver um tempo intenso com Deus.",
+    resposta:
+      "Jovens de 18 a 35 anos que querem viver um tempo intenso com Deus. Quem tem filhos pequenos também pode vir: as crianças podem ir junto, acompanhadas dos pais.",
   },
   {
     pergunta: "Quanto custa a inscrição?",
@@ -69,7 +70,7 @@ const FAQ = [
   {
     pergunta: "Posso levar meus filhos?",
     resposta:
-      "Pode sim! Crianças de até 4 anos não pagam, e de 5 a 10 anos pagam meia (R$ 381,00). As crianças ficam no mesmo quarto que os pais ou responsáveis.",
+      "Pode sim! A ideia é que você consiga viver o Camp sem se preocupar em ter com quem deixar os pequenos. Crianças de até 4 anos não pagam, e de 5 a 10 anos pagam meia (R$ 381,00). Elas vão acompanhadas dos pais e dormem no mesmo quarto que eles.",
   },
   {
     pergunta: "O que está incluso no valor?",
